@@ -1,0 +1,2 @@
+class LoginEntry < ApplicationRecord
+end

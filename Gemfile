@@ -4,19 +4,19 @@ gem 'apitome'
 gem 'bcrypt', '3.1.11', require: 'bcrypt'
 gem 'bugsnag'
 gem 'coffee-rails', '~> 4.2'
-gem 'combine_pdf', '< 0.2.15'
+# gem 'combine_pdf', '< 0.2.15'
 gem 'foreman', '0.63.0'
-gem 'gruff',
-  git: 'https://github.com/BlakeCampbells/gruff.git',
-  branch: 'feature-bar-grouping' # pdf
+# gem 'gruff',
+#   git: 'https://github.com/BlakeCampbells/gruff.git',
+#   branch: 'feature-bar-grouping' # pdf
 gem 'haml', '4.0.7'
 gem 'haml-rails', '0.9'
 gem 'jquery-rails'
 gem 'mina'
 gem 'pg'
-gem 'prawn', '~> 2.0.2' # pdf
-gem 'prawn-icon' # pdf
-gem 'prawn-svg', '~>0.21.0' # pdf
+# gem 'prawn', '~> 2.0.2' # pdf
+# gem 'prawn-icon' # pdf
+# gem 'prawn-svg', '~>0.21.0' # pdf
 gem 'puma', '~> 3.0'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'redis'
