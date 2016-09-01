@@ -1,0 +1,65 @@
+development:
+  adapter: postgresql
+  database: capacityassessor_development
+  encoding: UTF8
+  username: mortarstone
+  password: mortarstone
+  port: 5432
+  host: localhost
+  min_messages: warning
+  pool: <%= ENV["DB_POOL"] || ENV['MAX_THREADS'] || 5 %>
+
+# Uncomment for Docker
+#development:
+#  adapter: postgresql
+#  database: capacityassessor_development
+#  encoding: UTF8
+#  username: postgres
+#  password:
+#  port: 5432
+#  host: db
+#  min_messages: warning
+#  pool: <%= ENV["DB_POOL"] || ENV['MAX_THREADS'] || 5 %>
+
+test:
+  adapter: postgresql
+  database: msdonors_test<%= ENV['TEST_ENV_NUMBER'] %>
+  encoding: UTF8
+  username: mortarstone
+  password: mortarstone
+  port: 5432
+  host: localhost
+  min_messages: warning
+
+# Uncomment for Docker
+#test:
+#  adapter: postgresql
+#  database: donors_test
+#  encoding: UTF8
+#  username: postgres
+#  password:
+#  port: 5432
+#  host: db
+#  min_messages: warning
+
+staging:
+  adapter: postgresql
+  database: msdonors_staging
+  encoding: UTF8
+  username: mortarstone
+  password: mortarstone
+  port: 5432
+  host: localhost
+  min_messages: warning
+  pool: <%= ENV["DB_POOL"] || ENV['MAX_THREADS'] || 5 %>
+
+production:
+  adapter: postgresql
+  database: msdonors_production
+  encoding: UTF8
+  username: mortarstone
+  password: mortarstone
+  port: 5432
+  host: localhost
+  min_messages: warning
+  pool: <%= ENV["DB_POOL"] || ENV['MAX_THREADS'] || 5 %>

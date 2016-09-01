@@ -1,0 +1,1 @@
+concurrency: worker=3, worker_critical=1, scheduler=1, web=1, logs=1
