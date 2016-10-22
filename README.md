@@ -64,3 +64,21 @@ Running "foreman start" it will start the background processes found in the ".fo
 * Code must be tested using RSpec.
 * Code will be checked with RuboCopy.
 * Code will be checked with Rails Best Practices
+
+
+### Integration
+
+## Setup ##
+
+Add the JavaScript files specified above to the header section.
+
+    ...
+    <head>
+      <script src="https://cdn.betafishapp.io/beta_fish.js"></script>
+
+      $(function() {
+        BetaFish.start({'access_key' : '83883939483948388399393039493'});
+      });
+
+    </head>
+    ...
