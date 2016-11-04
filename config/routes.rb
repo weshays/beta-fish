@@ -12,4 +12,8 @@ Rails.application.routes.draw do
   resource :dashboard, controller: :dashboard, only: [:show]
   resources :feedback_entries, only: [:index, :show, :update]
   resource :settings, only: [:show]
+
+  namespace :api do
+    resources :feedback_entries, only: [:create], defaults: { format: :json }
+  end
 end
