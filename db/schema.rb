@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160901042931) do
+ActiveRecord::Schema.define(version: 20161104021059) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,25 +20,17 @@ ActiveRecord::Schema.define(version: 20160901042931) do
     t.string   "business_name"
     t.string   "first_name",                        null: false
     t.string   "last_name",                         null: false
+    t.integer  "strip_id"
     t.boolean  "active",            default: true,  null: false
     t.string   "address",                           null: false
     t.string   "address2"
     t.string   "city",                              null: false
     t.string   "state",                             null: false
     t.string   "postal_code",                       null: false
-    t.float    "lat"
-    t.float    "lng"
     t.string   "website"
     t.string   "email",                             null: false
     t.string   "phone_number",                      null: false
-    t.date     "next_billing_date"
-    t.float    "setup_fee",         default: 0.0,   null: false
     t.float    "monthly_rate",      default: 0.0,   null: false
-    t.float    "screen_rate",       default: 0.0,   null: false
-    t.string   "customer_id"
-    t.string   "customer_cim_id"
-    t.string   "payment_cim_id"
-    t.string   "cc_expire"
     t.string   "referrer",                          null: false
     t.boolean  "opt_in",            default: true,  null: false
     t.string   "source_lead"
@@ -47,7 +39,27 @@ ActiveRecord::Schema.define(version: 20160901042931) do
     t.string   "lockout_message"
     t.datetime "created_at"
     t.datetime "deleted_at"
-    t.index ["next_billing_date"], name: "index_customers_on_next_billing_date", using: :btree
+  end
+
+  create_table "feedback_entries", force: :cascade do |t|
+    t.integer  "customer_id",      null: false
+    t.string   "comprehension"
+    t.string   "path"
+    t.text     "comment"
+    t.string   "browser"
+    t.string   "operating_system"
+    t.string   "resolution"
+    t.datetime "viewed_at"
+    t.datetime "archived_at"
+    t.datetime "created_at"
+    t.index ["comprehension"], name: "index_feedback_entries_on_comprehension", using: :btree
+    t.index ["customer_id"], name: "index_feedback_entries_on_customer_id", using: :btree
+  end
+
+  create_table "feedback_entry_attachments", force: :cascade do |t|
+    t.integer "feedback_entry_id"
+    t.string  "file"
+    t.integer "size"
   end
 
   create_table "grouped_permissions", force: :cascade do |t|

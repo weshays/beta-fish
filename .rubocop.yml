@@ -1,35 +1,29 @@
 AllCops:
   Exclude:
+    - 'spec/**/*'
     - 'vendor/**/*'
     - 'db/**/*'
     - 'bin/**/*'
     - 'script/**/*'
-    - !ruby/regexp /old_and_unused\.rb$/
     - 'lib/mina/**/*'
     - 'lib/tasks/**/*'
     - 'config/**/*'
     - 'Guardfile'
-  TargetRubyVersion: 2.2
+    - 'Gemfile'
+    - 'Rakefile'
+  TargetRubyVersion: 2.3
 Documentation:
-  Enabled: false
-Metrics/LineLength:
-  Enabled: false
-Style/RescueModifier:
   Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
 Metrics/AbcSize:
-  Enabled: false
+  Max: 30
 Metrics/MethodLength:
-  Max: 100
+  Max: 30
+Metrics/LineLength:
+  Max: 120
 Metrics/ClassLength:
-  Max: 250
-Metrics/ModuleLength:
-  Max: 250
-Metrics/PerceivedComplexity:
-  Enabled: false
-Metrics/CyclomaticComplexity:
-  Enabled: false
+  Max: 200
 Style/AlignParameters:
   EnforcedStyle: with_fixed_indentation
 Style/IndentArray:
@@ -38,6 +32,4 @@ Style/ClosingParenthesisIndentation:
   Enabled: false
 Style/FrozenStringLiteralComment:
   Enabled: false
-Style/MutableConstant:
-  Exclude:
-    - 'engines/*/lib/*/version.rb'
+

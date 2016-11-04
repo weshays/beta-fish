@@ -1,0 +1,20 @@
+app_vars: &app_vars
+  #update_git_submodules: true
+  rebuild_database: true
+  #run_db_migrate: true
+  #load_fixtures: true
+  #fixtures: 'users'
+  #post_fixture_tasks: post_fixture_setup
+  #load_sql_file: '~/Git/database_backups/ca_production.sql'
+  run_post_db_migrate: true
+
+development:
+  <<: *app_vars
+
+test:
+  <<: *app_vars
+
+production:
+  #rebuild_database: false
+  #load_fixtures: false
+  <<: *app_vars

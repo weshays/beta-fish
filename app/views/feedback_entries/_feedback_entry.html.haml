@@ -1,0 +1,10 @@
+%tr
+  %td
+    .feedback_path= feedback_entry.path
+    .feedback_entered= feedback_entry.created_at.to_s(:db)
+    .feedback_status= feedback_status(feedback_entry)
+    .feedback_comment= feedback_entry.comment
+    .feedback_browser= feedback_browser(feedback_entry)
+    .feedback_operating_system= feedback_operating_system(feedback_entry)
+    .feedback_resolution= feedback_entry.resolution
+    .feedback_screenshot= feedback_screenshot(feedback_entry)

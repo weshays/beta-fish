@@ -5,25 +5,17 @@ class CreateCustomers < ActiveRecord::Migration[5.0]
       t.string :business_name
       t.string :first_name, null: false
       t.string :last_name, null: false
+      t.integer :strip_id
       t.boolean :active, null: false, default: true
       t.string :address, null: false
       t.string :address2
       t.string :city, null: false
       t.string :state, null: false
       t.string :postal_code, null: false
-      t.float :lat
-      t.float :lng
       t.string :website
       t.string :email, null: false
       t.string :phone_number, null: false
-      t.date :next_billing_date
-      t.float :setup_fee, null: false, default: 0.00
       t.float :monthly_rate, null: false, default: 0.00
-      t.float :screen_rate, null: false, default: 0.00
-      t.string :customer_id
-      t.string :customer_cim_id
-      t.string :payment_cim_id
-      t.string :cc_expire
       t.string :referrer, null: false
       t.boolean :opt_in, null: false, default: true
       t.string :source_lead
@@ -33,7 +25,5 @@ class CreateCustomers < ActiveRecord::Migration[5.0]
       t.datetime :created_at
       t.datetime :deleted_at
     end
-
-    add_index :customers, :next_billing_date
   end
 end
