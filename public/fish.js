@@ -1,6 +1,6 @@
 BetaFish = {
   defaults : { 'access_key' : null },
-  class_vars : { 'url' : 'https://betafish.herokuapp.com/api/feedback_entries' }
+  class_vars : { 'url' : 'https://betafish.herokuapp.com/api/feedback_entries' },
   //class_vars : { 'url' : 'http://localhost:3000/api/feedback_entries' },
 
   show_form : function() {
