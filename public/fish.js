@@ -1,81 +1,29 @@
 BetaFish = {
   defaults : { 'access_key' : null },
-  _class_vars : { 'url' : 'https://app.betafishapp.io/fish_net' },
+  _class_vars : { 'url' : 'https://betafish.herokuapp.com/api/feedback_entry' },
 
   start : function(options) {
-    if(options !== undefined) {
-      $.extend(this.defaults, options)
-    }
+    // if(options !== undefined) {
+    //   $.extend(this.defaults, options)
+    // }
 
-    if(this.defaults['access_key'] == null) {
-      alert('Access key must be set');
-      return;
-    }
+    // if(this.defaults['access_key'] == null) {
+    //   alert('Access key must be set');
+    //   return;
+    // }
 
-    var self = this; // Need object scope at this point
-    $.getJSON(this._class_vars['url'], function(response){
-        var form = response['form'];
-        form = form.replace(/[\r\n]/g, '');
-        form = TCBase64.decode(form);
-        $('#'+self.defaults['city_login_div_id']).html(form);
+    // var self = this; // Need object scope at this point
+    // $.getJSON(this._class_vars['url'], function(response){
 
-        if(!self.defaults['show_remember_me']) {
-          $('#'+self.defaults['city_login_div_id']+' #authcity #remember-me').hide();
-        }
-
-        if(self.defaults['use_placeholder_text']) {
-          $('#'+self.defaults['city_login_div_id']+' label[for="login"]').hide();
-          $('#'+self.defaults['city_login_div_id']+' label[for="password"]').hide();
-          $('#'+self.defaults['city_login_div_id']+' #authcity #login').attr('placeholder','Login');
-          $('#'+self.defaults['city_login_div_id']+' #authcity #password').attr('placeholder','Password');
-        }
-
-        self._add_meta_tag_csrf_token();
-        self._add_login_link_listener();
-      }
-    )
+    //     self.take_snapshot();
+    //   }
+    // )
+    console.log('Hello world');
   },
 
-  _add_meta_tag_csrf_token : function() {
-    var csrf_token = document.createElement('meta');
-    csrf_token.name = "csrf-token";
-    csrf_token.content = $('[name="authenticity_token"]').val()
-    document.getElementsByTagName('head')[0].appendChild(csrf_token);
-  },
+  take_snapshot : function() {
 
-  _remove_errors : function() {
-    $(".city_error").remove();
-  },
-
-  _add_error : function(msg) {
-    var self = this; // Need object scope at this point
-    var error_li = document.createElement("li");
-    error_li.setAttribute("class","city_error");
-    error_li.innerHTML = msg;
-    $("#authcity ul ").prepend( error_li );
-  },
-
-  _add_login_link_listener : function() {
-    var self = this; // Need object scope at this point
-    $("#city_login_link").click(function() {
-      self._remove_errors();
-
-      var params = {
-        'login' : $("#login").val(),
-        'password' : $("#password").val(),
-        'authenticity_token' : $('[name="authenticity_token"]').val()
-      };
-
-      $.getJSON(self._class_vars['login_url'], params, function(response){
-        if(response["success"] != undefined) {
-          window.location = "https://" + self.defaults['subdomain'] + ".onthecity.org";
-        } else {
-          self._add_error(response["errors"]);
-        }
-      });
-    });
   }
-
 }
 
 
