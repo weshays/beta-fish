@@ -22,7 +22,13 @@ BetaFish = {
   },
 
   take_snapshot : function() {
-
+    console.log('Start');
+    html2canvas(document.body, {
+      onrendered: function(canvas) {
+        document.body.appendChild(canvas);
+      }
+    });
+    console.log('Finished');
   }
 }
 
