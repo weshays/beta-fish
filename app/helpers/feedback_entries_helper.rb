@@ -18,6 +18,7 @@ module FeedbackEntriesHelper
   end
 
   def feedback_screenshot(feedback_entry)
-    feedback_entry.feedback_entry_attachment.nil? ? '' : 'P'
+    # feedback_entry.feedback_entry_attachment.nil? ? '' : 'P'
+    image_tag( feedback_entry.screenshot, size: "300x300" )
   end
 end

@@ -42,13 +42,15 @@ ActiveRecord::Schema.define(version: 20161104021059) do
   end
 
   create_table "feedback_entries", force: :cascade do |t|
-    t.integer  "customer_id",      null: false
+    t.integer  "customer_id",        null: false
     t.string   "comprehension"
     t.string   "path"
     t.text     "comment"
     t.string   "browser"
     t.string   "operating_system"
-    t.string   "resolution"
+    t.string   "screen_resolution"
+    t.string   "browser_resolution"
+    t.text     "screenshot"
     t.datetime "viewed_at"
     t.datetime "archived_at"
     t.datetime "created_at"

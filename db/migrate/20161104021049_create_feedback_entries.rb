@@ -7,7 +7,9 @@ class CreateFeedbackEntries < ActiveRecord::Migration[5.0]
       t.text :comment
       t.string :browser
       t.string :operating_system
-      t.string :resolution
+      t.string :screen_resolution
+      t.string :browser_resolution
+      t.text :screenshot
       t.datetime :viewed_at
       t.datetime :archived_at
       t.datetime :created_at

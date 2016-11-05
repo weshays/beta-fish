@@ -33,6 +33,14 @@ class FeedbackEntriesController < ApplicationController
   def update
   end
 
+  # def show_image
+  #   @feedback_entry = FeedbackEntry.find(params[:id])
+  #   send_data @feedback_entry.screenshot,
+  #     filename: "image#{params[:id]}.png",
+  #     type: 'image/png',
+  #     disposition: 'inline'
+  # end
+
   private
 
   def feedback_entry
