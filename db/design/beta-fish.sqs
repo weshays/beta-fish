@@ -1,5 +1,119 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <SQLContainer>
+    <SQLTable>
+        <name><![CDATA[feedback_entry_tags]]></name>
+        <schema><![CDATA[]]></schema>
+        <location>
+            <x>2080.00</x>
+            <y>584.00</y>
+        </location>
+        <size>
+            <width>214.00</width>
+            <height>100.00</height>
+        </size>
+        <zorder>22</zorder>
+        <SQLField>
+            <name><![CDATA[id]]></name>
+            <type><![CDATA[integer]]></type>
+            <primaryKey>1</primaryKey>
+            <autoIncrement><![CDATA[1]]></autoIncrement>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[13FD2B57-C038-4C70-934A-F9D417531426]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[feedback_entry_id]]></name>
+            <type><![CDATA[integer]]></type>
+            <referencesField>id</referencesField>
+            <referencesTable>feedback_entries</referencesTable>
+            <referencesField><![CDATA[id]]></referencesField>
+            <referencesTable><![CDATA[feedback_entries]]></referencesTable>
+            <sourceCardinality>5</sourceCardinality>
+            <destinationCardinality>1</destinationCardinality>
+            <referencesFieldUID><![CDATA[906A9CAD-C144-4B68-A1F6-9FC35A6A6B70]]></referencesFieldUID>
+            <referencesTableUID><![CDATA[FC7D21D6-9A66-47C0-A34D-E9F58A27AAB8]]></referencesTableUID>
+            <notNull><![CDATA[0]]></notNull>
+            <uid><![CDATA[F96C847C-18E5-4FB7-B85A-3F19FDC54876]]></uid>
+            <unique><![CDATA[0]]></unique>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[tag_id]]></name>
+            <type><![CDATA[integer]]></type>
+            <referencesField>id</referencesField>
+            <referencesTable>tags</referencesTable>
+            <referencesField><![CDATA[id]]></referencesField>
+            <referencesTable><![CDATA[tags]]></referencesTable>
+            <sourceCardinality>5</sourceCardinality>
+            <destinationCardinality>1</destinationCardinality>
+            <referencesFieldUID><![CDATA[159D244D-4B13-4414-A1F1-CEB8A8974988]]></referencesFieldUID>
+            <referencesTableUID><![CDATA[4143B88B-483B-4E64-A6BA-CEF20ACA07DA]]></referencesTableUID>
+            <forcedUnique><![CDATA[0]]></forcedUnique>
+            <uid><![CDATA[C7612BAE-9F7D-4157-971E-7F87369F64F6]]></uid>
+            <unique><![CDATA[0]]></unique>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[created_at]]></name>
+            <type><![CDATA[datetime]]></type>
+            <uid><![CDATA[F17619A4-32C7-429B-B353-DA1453A45143]]></uid>
+        </SQLField>
+        <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
+        <uid><![CDATA[09415DDB-0B29-4084-9CBE-3F83C6B4AD19]]></uid>
+    </SQLTable>
+    <SQLTable>
+        <name><![CDATA[customer_partner_relations]]></name>
+        <schema><![CDATA[]]></schema>
+        <location>
+            <x>858.00</x>
+            <y>781.00</y>
+        </location>
+        <size>
+            <width>226.00</width>
+            <height>100.00</height>
+        </size>
+        <zorder>19</zorder>
+        <SQLField>
+            <name><![CDATA[id]]></name>
+            <type><![CDATA[integer]]></type>
+            <primaryKey>1</primaryKey>
+            <autoIncrement><![CDATA[1]]></autoIncrement>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[4E6829F8-82D2-49B5-88C9-BE15CB50802E]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[customer_id]]></name>
+            <type><![CDATA[integer]]></type>
+            <referencesField>id</referencesField>
+            <referencesTable>customers</referencesTable>
+            <referencesField><![CDATA[id]]></referencesField>
+            <referencesTable><![CDATA[customers]]></referencesTable>
+            <sourceCardinality>5</sourceCardinality>
+            <destinationCardinality>1</destinationCardinality>
+            <referencesFieldUID><![CDATA[35C348C3-9E44-4344-A0E8-7D36FEB98075]]></referencesFieldUID>
+            <referencesTableUID><![CDATA[A752E7E7-6E5E-4531-AD10-2E18B0A20095]]></referencesTableUID>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[D3110154-839F-4E1E-B7C4-B920FBE13F0F]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[feedback_partner_id]]></name>
+            <type><![CDATA[integer]]></type>
+            <referencesField>id</referencesField>
+            <referencesTable>feedback_partners</referencesTable>
+            <referencesField><![CDATA[id]]></referencesField>
+            <referencesTable><![CDATA[feedback_partners]]></referencesTable>
+            <sourceCardinality>5</sourceCardinality>
+            <destinationCardinality>1</destinationCardinality>
+            <referencesFieldUID><![CDATA[D6D71A0B-AE5A-42A7-9B80-6536B6B5B2BC]]></referencesFieldUID>
+            <referencesTableUID><![CDATA[482C215B-CE8A-444D-ABE2-18B130FC7AAC]]></referencesTableUID>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[76B01C76-03D0-4DCA-94AC-D5F3922693ED]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[created_at]]></name>
+            <type><![CDATA[datetime]]></type>
+            <uid><![CDATA[11C74F2D-AB46-41A8-A2CA-A4C6F27EC985]]></uid>
+        </SQLField>
+        <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
+        <uid><![CDATA[140CC746-F5EF-492A-BD42-D28A7DEC4A53]]></uid>
+    </SQLTable>
     <SQLComment>
         <name><![CDATA[clients cont._23]]></name>
         <comment><![CDATA[The customer_id will be set once the customer entry is created from the signup information.
@@ -28,14 +142,14 @@ The signup_type options are:
         <name><![CDATA[feedback_entry_attachments]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>1569.00</x>
-            <y>118.00</y>
+            <x>2079.00</x>
+            <y>430.00</y>
         </location>
         <size>
             <width>233.00</width>
             <height>100.00</height>
         </size>
-        <zorder>14</zorder>
+        <zorder>8</zorder>
         <SQLField>
             <name><![CDATA[id]]></name>
             <type><![CDATA[integer]]></type>
@@ -70,37 +184,18 @@ The signup_type options are:
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[2773B0C1-BFBE-4D3B-A2E4-4E2291CC0E8C]]></uid>
     </SQLTable>
-    <SQLComment>
-        <name><![CDATA[clients cont._36]]></name>
-        <comment><![CDATA[All customers will belong to a policy. Only one default policy will exist.]]></comment>
-        <location>
-            <x>798.00</x>
-            <y>692.00</y>
-        </location>
-        <size>
-            <width>256.00</width>
-            <height>60.00</height>
-        </size>
-        <zorder>7</zorder>
-        <commentTitle><![CDATA[policies table]]></commentTitle>
-        <hidden><![CDATA[0]]></hidden>
-        <labelColor><![CDATA[{0.997112,0.713501,0.670785,0.8}]]></labelColor>
-        <labelWindowIndex><![CDATA[8]]></labelWindowIndex>
-        <temporaryOriginalName><![CDATA[clients cont. note]]></temporaryOriginalName>
-        <uid><![CDATA[35444129-9689-49EF-8AE2-632F9F36EFA3]]></uid>
-    </SQLComment>
     <SQLTable>
         <name><![CDATA[login_entries]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>839.00</x>
-            <y>186.00</y>
+            <x>917.00</x>
+            <y>145.00</y>
         </location>
         <size>
             <width>156.00</width>
             <height>80.00</height>
         </size>
-        <zorder>9</zorder>
+        <zorder>3</zorder>
         <SQLField>
             <name><![CDATA[id]]></name>
             <type><![CDATA[integer]]></type>
@@ -116,7 +211,7 @@ The signup_type options are:
             <referencesTable>users</referencesTable>
             <referencesField><![CDATA[id]]></referencesField>
             <referencesTable><![CDATA[users]]></referencesTable>
-            <sourceCardinality>4</sourceCardinality>
+            <sourceCardinality>5</sourceCardinality>
             <destinationCardinality>1</destinationCardinality>
             <referencesFieldUID><![CDATA[B8F8EC52-9E6B-448F-9432-5AD6F85FBE3B]]></referencesFieldUID>
             <referencesTableUID><![CDATA[C5320A5A-85B5-472C-9005-63710BE5D6AA]]></referencesTableUID>
@@ -131,6 +226,168 @@ The signup_type options are:
         <labelWindowIndex><![CDATA[7]]></labelWindowIndex>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[39A6C12A-945C-4FE8-AD63-DB8C99EC978F]]></uid>
+    </SQLTable>
+    <SQLTable>
+        <name><![CDATA[surveys]]></name>
+        <schema><![CDATA[]]></schema>
+        <location>
+            <x>1773.00</x>
+            <y>247.00</y>
+        </location>
+        <size>
+            <width>150.00</width>
+            <height>140.00</height>
+        </size>
+        <zorder>15</zorder>
+        <SQLField>
+            <name><![CDATA[id]]></name>
+            <type><![CDATA[integer]]></type>
+            <primaryKey>1</primaryKey>
+            <autoIncrement><![CDATA[1]]></autoIncrement>
+            <forcedUnique><![CDATA[1]]></forcedUnique>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[30AD3E5A-F0DB-4733-94C1-5547B2874B55]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[customer_id]]></name>
+            <type><![CDATA[integer]]></type>
+            <uid><![CDATA[FAEE71EB-5808-43F8-840F-31C793B97777]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[name]]></name>
+            <type><![CDATA[integer]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[1507AC79-6436-4E72-AD50-EE7F96565F40]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[activated_at]]></name>
+            <type><![CDATA[date]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[441959A5-D4EA-476F-AE73-B8F1F8B3BE5B]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[created_at]]></name>
+            <type><![CDATA[datetime]]></type>
+            <uid><![CDATA[AC7E55C0-9524-44A7-B446-389A7BBC2DE5]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[archived_at]]></name>
+            <type><![CDATA[datetime]]></type>
+            <uid><![CDATA[CC2AA594-A05E-4A07-8209-6CCBEC919C45]]></uid>
+        </SQLField>
+        <labelWindowIndex><![CDATA[0]]></labelWindowIndex>
+        <temporaryOriginalName><![CDATA[batches_meetings]]></temporaryOriginalName>
+        <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
+        <uid><![CDATA[3BA90EF2-1C28-43B9-847A-FFE6091F4AB8]]></uid>
+    </SQLTable>
+    <SQLTable>
+        <name><![CDATA[tags]]></name>
+        <schema><![CDATA[]]></schema>
+        <location>
+            <x>2344.00</x>
+            <y>580.00</y>
+        </location>
+        <size>
+            <width>182.00</width>
+            <height>80.00</height>
+        </size>
+        <zorder>21</zorder>
+        <SQLField>
+            <name><![CDATA[id]]></name>
+            <type><![CDATA[integer]]></type>
+            <primaryKey>1</primaryKey>
+            <autoIncrement><![CDATA[1]]></autoIncrement>
+            <forcedUnique><![CDATA[1]]></forcedUnique>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[159D244D-4B13-4414-A1F1-CEB8A8974988]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[customer_id]]></name>
+            <type><![CDATA[integer]]></type>
+            <referencesField>id</referencesField>
+            <referencesTable>customers_cont_2</referencesTable>
+            <referencesField><![CDATA[id]]></referencesField>
+            <referencesTable><![CDATA[customers_cont_2]]></referencesTable>
+            <sourceCardinality>5</sourceCardinality>
+            <destinationCardinality>1</destinationCardinality>
+            <referencesFieldUID><![CDATA[45AB3AA3-42EC-4255-9B7C-FC922534A174]]></referencesFieldUID>
+            <referencesTableUID><![CDATA[6493A05C-5F3B-42A6-AAD1-A42BD17FB64D]]></referencesTableUID>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[FEA0A0FD-7DB5-449C-BA00-5C2E578F808A]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[name]]></name>
+            <type><![CDATA[string]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[B71B2190-473E-41BE-88A8-13A39A71C804]]></uid>
+        </SQLField>
+        <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
+        <uid><![CDATA[4143B88B-483B-4E64-A6BA-CEF20ACA07DA]]></uid>
+    </SQLTable>
+    <SQLTable>
+        <name><![CDATA[feedback_partners]]></name>
+        <schema><![CDATA[]]></schema>
+        <location>
+            <x>1437.00</x>
+            <y>820.00</y>
+        </location>
+        <size>
+            <width>200.00</width>
+            <height>200.00</height>
+        </size>
+        <zorder>14</zorder>
+        <SQLField>
+            <name><![CDATA[id]]></name>
+            <type><![CDATA[integer]]></type>
+            <primaryKey>1</primaryKey>
+            <autoIncrement><![CDATA[1]]></autoIncrement>
+            <forcedUnique><![CDATA[1]]></forcedUnique>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[D6D71A0B-AE5A-42A7-9B80-6536B6B5B2BC]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[first_name]]></name>
+            <type><![CDATA[string]]></type>
+            <notNull><![CDATA[0]]></notNull>
+            <uid><![CDATA[9CF1CDE7-1570-4325-AED3-C0252278B725]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[last_name]]></name>
+            <type><![CDATA[integer]]></type>
+            <uid><![CDATA[5478E632-6CB0-4270-9432-F7B2C1AD1C56]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[email]]></name>
+            <type><![CDATA[integer]]></type>
+            <uid><![CDATA[DE3C6795-0701-4BC3-ADDE-987FA789EB9A]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[password_digest]]></name>
+            <type><![CDATA[integer]]></type>
+            <uid><![CDATA[9B7795FB-28C4-4294-A77C-38F01DD5082C]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[password_change]]></name>
+            <type><![CDATA[integer]]></type>
+            <uid><![CDATA[293B28FE-44DC-46C2-AEC0-D2F6D7AB1B07]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[perishable_token]]></name>
+            <type><![CDATA[integer]]></type>
+            <uid><![CDATA[B303F38B-7189-4DB7-9D9A-241A2EBD45C5]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[created_at]]></name>
+            <type><![CDATA[datetime]]></type>
+            <uid><![CDATA[DD331103-D76A-4A16-853A-E4060D9E3C74]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[deleted_at]]></name>
+            <type><![CDATA[integer]]></type>
+            <uid><![CDATA[BD722934-63F9-4953-85E4-AE3AA98E6CF3]]></uid>
+        </SQLField>
+        <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
+        <uid><![CDATA[482C215B-CE8A-444D-ABE2-18B130FC7AAC]]></uid>
     </SQLTable>
     <SQLTable>
         <name><![CDATA[signup_links]]></name>
@@ -289,72 +546,44 @@ The signup_type options are:
         <uid><![CDATA[5233A0FA-BF88-4D71-9F4F-D8DAAC40E88F]]></uid>
     </SQLTable>
     <SQLTable>
-        <name><![CDATA[grouped_permissions]]></name>
+        <name><![CDATA[customers_cont_2]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>444.00</x>
-            <y>535.00</y>
+            <x>2576.00</x>
+            <y>580.00</y>
         </location>
         <size>
-            <width>209.00</width>
-            <height>80.00</height>
+            <width>149.00</width>
+            <height>40.00</height>
         </size>
-        <zorder>2</zorder>
+        <zorder>23</zorder>
         <SQLField>
             <name><![CDATA[id]]></name>
             <type><![CDATA[integer]]></type>
             <primaryKey>1</primaryKey>
             <autoIncrement><![CDATA[1]]></autoIncrement>
+            <forcedUnique><![CDATA[1]]></forcedUnique>
             <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[1C96F131-2332-4247-B6C6-4E8A9752F41C]]></uid>
+            <uid><![CDATA[45AB3AA3-42EC-4255-9B7C-FC922534A174]]></uid>
         </SQLField>
-        <SQLField>
-            <name><![CDATA[permission_id]]></name>
-            <type><![CDATA[integer]]></type>
-            <referencesField>id</referencesField>
-            <referencesTable>permissions</referencesTable>
-            <referencesField><![CDATA[id]]></referencesField>
-            <referencesTable><![CDATA[permissions]]></referencesTable>
-            <sourceCardinality>4</sourceCardinality>
-            <destinationCardinality>1</destinationCardinality>
-            <referencesFieldUID><![CDATA[18C9B890-AAAE-43A9-8EA7-F63F5AD4C2B5]]></referencesFieldUID>
-            <referencesTableUID><![CDATA[C8AC1B5B-848F-4AF9-B6BE-067128A402ED]]></referencesTableUID>
-            <indexed><![CDATA[1]]></indexed>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[B6174476-33FF-436F-80BB-6CAB1478C292]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[policy_id]]></name>
-            <type><![CDATA[integer]]></type>
-            <referencesField>id</referencesField>
-            <referencesTable>policies</referencesTable>
-            <referencesField><![CDATA[id]]></referencesField>
-            <referencesTable><![CDATA[policies]]></referencesTable>
-            <sourceCardinality>4</sourceCardinality>
-            <destinationCardinality>1</destinationCardinality>
-            <referencesFieldUID><![CDATA[2B5631A7-549F-45DF-8148-4F8548A12FEA]]></referencesFieldUID>
-            <referencesTableUID><![CDATA[A606D957-727D-41F3-9A0E-FD8C947B3B3B]]></referencesTableUID>
-            <indexed><![CDATA[1]]></indexed>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[BD9EE811-CA3D-48EE-9AD2-FD2C1B075A8F]]></uid>
-        </SQLField>
-        <hidden><![CDATA[0]]></hidden>
-        <labelWindowIndex><![CDATA[16]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[0]]></labelWindowIndex>
+        <temporaryOriginalName><![CDATA[companies_cont_1]]></temporaryOriginalName>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
-        <uid><![CDATA[6E509FDC-7599-4EAE-B3BB-596DF45FA33F]]></uid>
+        <uid><![CDATA[6493A05C-5F3B-42A6-AAD1-A42BD17FB64D]]></uid>
     </SQLTable>
     <SQLComment>
-        <name><![CDATA[clients cont._38]]></name>
-        <comment><![CDATA[The stripe_id is the ID used to access invoices, transactions, and other billing information from Stripe.com]]></comment>
+        <name><![CDATA[clients cont._40]]></name>
+        <comment><![CDATA[The stripe_customer_token
+ is the ID used to access invoices, transactions, and other billing information from Stripe.com]]></comment>
         <location>
-            <x>1095.00</x>
-            <y>626.00</y>
+            <x>381.00</x>
+            <y>772.00</y>
         </location>
         <size>
-            <width>270.00</width>
-            <height>80.00</height>
+            <width>204.00</width>
+            <height>130.00</height>
         </size>
-        <zorder>13</zorder>
+        <zorder>7</zorder>
         <commentTitle><![CDATA[customers table]]></commentTitle>
         <hidden><![CDATA[0]]></hidden>
         <labelColor><![CDATA[{0.997112,0.713501,0.670785,0.8}]]></labelColor>
@@ -363,17 +592,152 @@ The signup_type options are:
         <uid><![CDATA[728CE4F9-A6B8-48EC-959D-6CFD540FCD61]]></uid>
     </SQLComment>
     <SQLTable>
+        <name><![CDATA[taken_surveys]]></name>
+        <schema><![CDATA[]]></schema>
+        <location>
+            <x>1516.00</x>
+            <y>254.00</y>
+        </location>
+        <size>
+            <width>207.00</width>
+            <height>120.00</height>
+        </size>
+        <zorder>20</zorder>
+        <SQLField>
+            <name><![CDATA[id]]></name>
+            <type><![CDATA[integer]]></type>
+            <primaryKey>1</primaryKey>
+            <autoIncrement><![CDATA[1]]></autoIncrement>
+            <forcedUnique><![CDATA[1]]></forcedUnique>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[8D601E40-1327-4A0D-A8A7-AB939C57669A]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[customer_id]]></name>
+            <type><![CDATA[integer]]></type>
+            <referencesField>id</referencesField>
+            <referencesTable>customers_cont_1</referencesTable>
+            <referencesField><![CDATA[id]]></referencesField>
+            <referencesTable><![CDATA[customers_cont_1]]></referencesTable>
+            <sourceCardinality>4</sourceCardinality>
+            <destinationCardinality>1</destinationCardinality>
+            <referencesFieldUID><![CDATA[5736A74F-390F-44EE-BA53-18151BB08C88]]></referencesFieldUID>
+            <referencesTableUID><![CDATA[9164CD0C-0FD0-4A5F-A461-E5543E3C9B20]]></referencesTableUID>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[DEE7015E-DE97-459E-B78D-E40700EA3B12]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[feedback_partner_id]]></name>
+            <type><![CDATA[integer]]></type>
+            <notNull><![CDATA[0]]></notNull>
+            <uid><![CDATA[0F8ACA73-604A-4DF0-BB9D-D8BEB6549CA5]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[survey_id]]></name>
+            <type><![CDATA[integer]]></type>
+            <referencesField>id</referencesField>
+            <referencesTable>surveys</referencesTable>
+            <referencesField><![CDATA[id]]></referencesField>
+            <referencesTable><![CDATA[surveys]]></referencesTable>
+            <sourceCardinality>5</sourceCardinality>
+            <destinationCardinality>1</destinationCardinality>
+            <referencesFieldUID><![CDATA[30AD3E5A-F0DB-4733-94C1-5547B2874B55]]></referencesFieldUID>
+            <referencesTableUID><![CDATA[3BA90EF2-1C28-43B9-847A-FFE6091F4AB8]]></referencesTableUID>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[61BC20CB-D793-4154-BA7E-F7F13363BFC0]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[taken_at]]></name>
+            <type><![CDATA[datetime]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[46F338D6-C874-4B43-87CA-443E8C1FE799]]></uid>
+        </SQLField>
+        <labelWindowIndex><![CDATA[0]]></labelWindowIndex>
+        <temporaryOriginalName><![CDATA[Table24]]></temporaryOriginalName>
+        <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
+        <uid><![CDATA[7CA80CD7-06E7-445E-A7B1-E334C96662AF]]></uid>
+    </SQLTable>
+    <SQLTable>
+        <name><![CDATA[checkpoints]]></name>
+        <schema><![CDATA[]]></schema>
+        <location>
+            <x>1498.00</x>
+            <y>496.00</y>
+        </location>
+        <size>
+            <width>182.00</width>
+            <height>180.00</height>
+        </size>
+        <zorder>16</zorder>
+        <SQLField>
+            <name><![CDATA[id]]></name>
+            <type><![CDATA[integer]]></type>
+            <primaryKey>1</primaryKey>
+            <autoIncrement><![CDATA[1]]></autoIncrement>
+            <forcedUnique><![CDATA[1]]></forcedUnique>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[74D1084D-67ED-4E14-8652-DD7A9256EB69]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[customer_id]]></name>
+            <type><![CDATA[integer]]></type>
+            <referencesField>id</referencesField>
+            <referencesTable>customers_cont_1</referencesTable>
+            <referencesField><![CDATA[id]]></referencesField>
+            <referencesTable><![CDATA[customers_cont_1]]></referencesTable>
+            <sourceCardinality>5</sourceCardinality>
+            <destinationCardinality>1</destinationCardinality>
+            <referencesFieldUID><![CDATA[5736A74F-390F-44EE-BA53-18151BB08C88]]></referencesFieldUID>
+            <referencesTableUID><![CDATA[9164CD0C-0FD0-4A5F-A461-E5543E3C9B20]]></referencesTableUID>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[1D834385-144A-4B29-AF5E-41014A92B5B7]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[name]]></name>
+            <type><![CDATA[string]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[4CE8217C-1ED3-4FF5-BC45-3B895DD102E7]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[url]]></name>
+            <type><![CDATA[string]]></type>
+            <uid><![CDATA[E8E5BEBF-F869-4CB0-AF16-DFB0B51E3A7D]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[frequency]]></name>
+            <type><![CDATA[integer]]></type>
+            <uid><![CDATA[36813980-F68F-4524-976A-DB7511E3B92A]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[enabled]]></name>
+            <type><![CDATA[boolean]]></type>
+            <uid><![CDATA[3C5BF64E-F622-49E2-A102-5D02F1B252D8]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[created_at]]></name>
+            <type><![CDATA[datetime]]></type>
+            <uid><![CDATA[8FA1F69C-528C-4D09-BC20-59A5BBC6F90D]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[archived_at]]></name>
+            <type><![CDATA[datetime]]></type>
+            <uid><![CDATA[3F144886-E39C-4CA7-953E-399BC44AB4EE]]></uid>
+        </SQLField>
+        <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
+        <uid><![CDATA[816E8248-BC87-4274-B36D-FF68F8251638]]></uid>
+    </SQLTable>
+    <SQLTable>
         <name><![CDATA[sessions]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>467.00</x>
-            <y>119.00</y>
+            <x>632.00</x>
+            <y>70.00</y>
         </location>
         <size>
             <width>188.00</width>
-            <height>200.00</height>
+            <height>180.00</height>
         </size>
-        <zorder>3</zorder>
+        <zorder>10</zorder>
         <SQLField>
             <name><![CDATA[id]]></name>
             <type><![CDATA[integer]]></type>
@@ -389,7 +753,7 @@ The signup_type options are:
             <referencesTable>customers</referencesTable>
             <referencesField><![CDATA[id]]></referencesField>
             <referencesTable><![CDATA[customers]]></referencesTable>
-            <sourceCardinality>4</sourceCardinality>
+            <sourceCardinality>5</sourceCardinality>
             <destinationCardinality>1</destinationCardinality>
             <referencesFieldUID><![CDATA[35C348C3-9E44-4344-A0E8-7D36FEB98075]]></referencesFieldUID>
             <referencesTableUID><![CDATA[A752E7E7-6E5E-4531-AD10-2E18B0A20095]]></referencesTableUID>
@@ -403,7 +767,7 @@ The signup_type options are:
             <referencesTable>users</referencesTable>
             <referencesField><![CDATA[id]]></referencesField>
             <referencesTable><![CDATA[users]]></referencesTable>
-            <sourceCardinality>2</sourceCardinality>
+            <sourceCardinality>1</sourceCardinality>
             <destinationCardinality>1</destinationCardinality>
             <referencesFieldUID><![CDATA[B8F8EC52-9E6B-448F-9432-5AD6F85FBE3B]]></referencesFieldUID>
             <referencesTableUID><![CDATA[C5320A5A-85B5-472C-9005-63710BE5D6AA]]></referencesTableUID>
@@ -419,12 +783,12 @@ The signup_type options are:
             <uid><![CDATA[9F3DD4B5-7C92-441F-B6CD-0EC252AE58AF]]></uid>
         </SQLField>
         <SQLField>
-            <name><![CDATA[changed_password]]></name>
+            <name><![CDATA[change_password]]></name>
             <type><![CDATA[boolean]]></type>
             <uid><![CDATA[244F6489-C714-4308-82FA-F05ABF52DD53]]></uid>
         </SQLField>
         <SQLField>
-            <name><![CDATA[cached_customer]]></name>
+            <name><![CDATA[cached_company]]></name>
             <type><![CDATA[jsonb]]></type>
             <uid><![CDATA[291955B2-A235-4FC4-8F75-BF41411F31A1]]></uid>
         </SQLField>
@@ -434,32 +798,53 @@ The signup_type options are:
             <uid><![CDATA[832614A6-122C-4602-9291-29FA7FDB399F]]></uid>
         </SQLField>
         <SQLField>
-            <name><![CDATA[cached_permissions]]></name>
-            <type><![CDATA[jsonb]]></type>
-            <uid><![CDATA[7A5D6D95-94A0-4C75-804A-8C8B11EA7554]]></uid>
-        </SQLField>
-        <SQLField>
             <name><![CDATA[created_at]]></name>
             <type><![CDATA[datetime]]></type>
             <uid><![CDATA[5A1DB717-F724-4754-8839-CDD934677BBE]]></uid>
         </SQLField>
         <hidden><![CDATA[0]]></hidden>
-        <labelWindowIndex><![CDATA[15]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[0]]></labelWindowIndex>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[8482A0C0-595D-4D37-888D-E4AAB13B4FCB]]></uid>
+    </SQLTable>
+    <SQLTable>
+        <name><![CDATA[customers_cont_1]]></name>
+        <schema><![CDATA[]]></schema>
+        <location>
+            <x>1245.00</x>
+            <y>456.00</y>
+        </location>
+        <size>
+            <width>149.00</width>
+            <height>40.00</height>
+        </size>
+        <zorder>17</zorder>
+        <SQLField>
+            <name><![CDATA[id]]></name>
+            <type><![CDATA[integer]]></type>
+            <primaryKey>1</primaryKey>
+            <autoIncrement><![CDATA[1]]></autoIncrement>
+            <forcedUnique><![CDATA[1]]></forcedUnique>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[5736A74F-390F-44EE-BA53-18151BB08C88]]></uid>
+        </SQLField>
+        <labelWindowIndex><![CDATA[2]]></labelWindowIndex>
+        <temporaryOriginalName><![CDATA[companies_cont_1]]></temporaryOriginalName>
+        <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
+        <uid><![CDATA[9164CD0C-0FD0-4A5F-A461-E5543E3C9B20]]></uid>
     </SQLTable>
     <SQLComment>
         <name><![CDATA[clients cont._22]]></name>
         <comment><![CDATA[All billing (invoices, transactions, etc) will be handled through Stripe.com]]></comment>
         <location>
-            <x>46.00</x>
-            <y>18.00</y>
+            <x>49.00</x>
+            <y>24.00</y>
         </location>
         <size>
             <width>495.00</width>
             <height>46.00</height>
         </size>
-        <zorder>11</zorder>
+        <zorder>5</zorder>
         <commentTitle><![CDATA[Billing]]></commentTitle>
         <hidden><![CDATA[0]]></hidden>
         <labelColor><![CDATA[{0,0.968633,0.0666618,0.8}]]></labelColor>
@@ -468,63 +853,17 @@ The signup_type options are:
         <uid><![CDATA[98812CBE-6B04-4B8E-B5A8-C52C1AED3FF7]]></uid>
     </SQLComment>
     <SQLTable>
-        <name><![CDATA[policies]]></name>
-        <schema><![CDATA[]]></schema>
-        <location>
-            <x>799.00</x>
-            <y>581.00</y>
-        </location>
-        <size>
-            <width>215.00</width>
-            <height>100.00</height>
-        </size>
-        <zorder>4</zorder>
-        <SQLField>
-            <name><![CDATA[id]]></name>
-            <type><![CDATA[integer]]></type>
-            <primaryKey>1</primaryKey>
-            <autoIncrement><![CDATA[1]]></autoIncrement>
-            <forcedUnique><![CDATA[1]]></forcedUnique>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[2B5631A7-549F-45DF-8148-4F8548A12FEA]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[default_policy]]></name>
-            <type><![CDATA[boolean]]></type>
-            <defaultValue><![CDATA[false]]></defaultValue>
-            <indexed><![CDATA[1]]></indexed>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[E516FE6D-B1C8-4B4F-801D-A3254B0E18B3]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[name]]></name>
-            <type><![CDATA[string]]></type>
-            <indexed><![CDATA[1]]></indexed>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[D50AD488-5D81-4543-A755-68C241515F6B]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[created_at]]></name>
-            <type><![CDATA[datetime]]></type>
-            <uid><![CDATA[19F886A5-77D9-4706-A079-2BDA82F5E821]]></uid>
-        </SQLField>
-        <hidden><![CDATA[0]]></hidden>
-        <labelWindowIndex><![CDATA[14]]></labelWindowIndex>
-        <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
-        <uid><![CDATA[A606D957-727D-41F3-9A0E-FD8C947B3B3B]]></uid>
-    </SQLTable>
-    <SQLTable>
         <name><![CDATA[customers]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>1096.00</x>
-            <y>119.00</y>
+            <x>384.00</x>
+            <y>264.00</y>
         </location>
         <size>
-            <width>172.00</width>
+            <width>200.00</width>
             <height>500.00</height>
         </size>
-        <zorder>10</zorder>
+        <zorder>4</zorder>
         <SQLField>
             <name><![CDATA[id]]></name>
             <type><![CDATA[integer]]></type>
@@ -537,14 +876,6 @@ The signup_type options are:
         <SQLField>
             <name><![CDATA[policy_id]]></name>
             <type><![CDATA[integer]]></type>
-            <referencesField>id</referencesField>
-            <referencesTable>policies</referencesTable>
-            <referencesField><![CDATA[id]]></referencesField>
-            <referencesTable><![CDATA[policies]]></referencesTable>
-            <sourceCardinality>1</sourceCardinality>
-            <destinationCardinality>1</destinationCardinality>
-            <referencesFieldUID><![CDATA[2B5631A7-549F-45DF-8148-4F8548A12FEA]]></referencesFieldUID>
-            <referencesTableUID><![CDATA[A606D957-727D-41F3-9A0E-FD8C947B3B3B]]></referencesTableUID>
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[36B14CCA-D173-42D1-A2ED-4ADC108783DE]]></uid>
         </SQLField>
@@ -568,7 +899,7 @@ The signup_type options are:
             <uid><![CDATA[8D6B8A9A-1782-4A9A-B8B4-1A7BA0661DF5]]></uid>
         </SQLField>
         <SQLField>
-            <name><![CDATA[stripe_id]]></name>
+            <name><![CDATA[stripe_customer_token]]></name>
             <type><![CDATA[integer]]></type>
             <uid><![CDATA[E4CBB420-18B9-4D42-B772-FC5A6D8C1A8A]]></uid>
         </SQLField>
@@ -686,18 +1017,90 @@ The signup_type options are:
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[A752E7E7-6E5E-4531-AD10-2E18B0A20095]]></uid>
     </SQLTable>
-    <SQLComment>
-        <name><![CDATA[clients cont._35]]></name>
-        <comment><![CDATA[The comprehension values are: happy, confused, bug, or idea]]></comment>
+    <SQLTable>
+        <name><![CDATA[products]]></name>
+        <schema><![CDATA[]]></schema>
         <location>
-            <x>1316.00</x>
-            <y>406.00</y>
+            <x>860.00</x>
+            <y>495.00</y>
         </location>
         <size>
-            <width>219.00</width>
-            <height>62.00</height>
+            <width>231.00</width>
+            <height>180.00</height>
         </size>
-        <zorder>16</zorder>
+        <zorder>11</zorder>
+        <SQLField>
+            <name><![CDATA[id]]></name>
+            <type><![CDATA[integer]]></type>
+            <primaryKey>1</primaryKey>
+            <autoIncrement><![CDATA[1]]></autoIncrement>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[ACEC7B0C-A244-4683-A7BB-5295DB856F38]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[customer_id]]></name>
+            <type><![CDATA[integer]]></type>
+            <referencesField>id</referencesField>
+            <referencesTable>customers_cont_1</referencesTable>
+            <referencesField><![CDATA[id]]></referencesField>
+            <referencesTable><![CDATA[customers_cont_1]]></referencesTable>
+            <sourceCardinality>5</sourceCardinality>
+            <destinationCardinality>1</destinationCardinality>
+            <referencesFieldUID><![CDATA[5736A74F-390F-44EE-BA53-18151BB08C88]]></referencesFieldUID>
+            <referencesTableUID><![CDATA[9164CD0C-0FD0-4A5F-A461-E5543E3C9B20]]></referencesTableUID>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[DBC9B4BE-5D69-40AB-8319-89DED6692401]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[name]]></name>
+            <type><![CDATA[string]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[C995BD2C-AFDC-4155-B74C-CE2A7200E6B8]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[enabled]]></name>
+            <type><![CDATA[boolean]]></type>
+            <defaultValue><![CDATA[false]]></defaultValue>
+            <uid><![CDATA[E1F1C97F-D63C-4605-BBCF-8784F8911D49]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[only_feedback_partners]]></name>
+            <type><![CDATA[boolean]]></type>
+            <defaultValue><![CDATA[false]]></defaultValue>
+            <uid><![CDATA[511280AA-51D1-43B1-B446-04AB2D2028A5]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[created_at]]></name>
+            <type><![CDATA[datetime]]></type>
+            <uid><![CDATA[327A5161-7367-44D8-B4DD-78E87FDB6485]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[updated_at]]></name>
+            <type><![CDATA[datetime]]></type>
+            <uid><![CDATA[78BC5148-F2B0-4510-A02F-0CC4C06EEFEB]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[archived_at]]></name>
+            <type><![CDATA[datetime]]></type>
+            <uid><![CDATA[356EDC0A-04E4-45E2-8FA9-FEF1347A52BB]]></uid>
+        </SQLField>
+        <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
+        <uid><![CDATA[C06C6AFD-18C5-45B4-88B9-3FFD5548313F]]></uid>
+    </SQLTable>
+    <SQLComment>
+        <name><![CDATA[clients cont._35]]></name>
+        <comment><![CDATA[The comprehension values are: happy, confused, bug, or idea
+
+feedback_partner_id: can be nil if taken anonymously.]]></comment>
+        <location>
+            <x>1823.00</x>
+            <y>764.00</y>
+        </location>
+        <size>
+            <width>269.00</width>
+            <height>113.00</height>
+        </size>
+        <zorder>9</zorder>
         <commentTitle><![CDATA[feedback_entries table]]></commentTitle>
         <hidden><![CDATA[0]]></hidden>
         <labelColor><![CDATA[{0.997112,0.713501,0.670785,0.8}]]></labelColor>
@@ -706,72 +1109,17 @@ The signup_type options are:
         <uid><![CDATA[C1D52753-221D-4599-9FCA-5253E071A973]]></uid>
     </SQLComment>
     <SQLTable>
-        <name><![CDATA[user_permissions]]></name>
-        <schema><![CDATA[]]></schema>
-        <location>
-            <x>444.00</x>
-            <y>337.00</y>
-        </location>
-        <size>
-            <width>209.00</width>
-            <height>80.00</height>
-        </size>
-        <zorder>5</zorder>
-        <SQLField>
-            <name><![CDATA[id]]></name>
-            <type><![CDATA[integer]]></type>
-            <primaryKey>1</primaryKey>
-            <autoIncrement><![CDATA[1]]></autoIncrement>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[E2F36B2D-A93A-412A-B8E5-39495B4E293C]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[user_id]]></name>
-            <type><![CDATA[integer]]></type>
-            <referencesField>id</referencesField>
-            <referencesTable>users</referencesTable>
-            <referencesField><![CDATA[id]]></referencesField>
-            <referencesTable><![CDATA[users]]></referencesTable>
-            <sourceCardinality>5</sourceCardinality>
-            <destinationCardinality>1</destinationCardinality>
-            <referencesFieldUID><![CDATA[B8F8EC52-9E6B-448F-9432-5AD6F85FBE3B]]></referencesFieldUID>
-            <referencesTableUID><![CDATA[C5320A5A-85B5-472C-9005-63710BE5D6AA]]></referencesTableUID>
-            <indexed><![CDATA[1]]></indexed>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[0C83E5EF-87BD-4C52-85CC-EBD2BC1DDFB8]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[permission_id]]></name>
-            <type><![CDATA[integer]]></type>
-            <referencesField>id</referencesField>
-            <referencesTable>permissions</referencesTable>
-            <referencesField><![CDATA[id]]></referencesField>
-            <referencesTable><![CDATA[permissions]]></referencesTable>
-            <sourceCardinality>4</sourceCardinality>
-            <destinationCardinality>1</destinationCardinality>
-            <referencesFieldUID><![CDATA[18C9B890-AAAE-43A9-8EA7-F63F5AD4C2B5]]></referencesFieldUID>
-            <referencesTableUID><![CDATA[C8AC1B5B-848F-4AF9-B6BE-067128A402ED]]></referencesTableUID>
-            <indexed><![CDATA[1]]></indexed>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[0C9757BA-5523-425B-BA86-BA2FD90CDFB6]]></uid>
-        </SQLField>
-        <hidden><![CDATA[0]]></hidden>
-        <labelWindowIndex><![CDATA[13]]></labelWindowIndex>
-        <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
-        <uid><![CDATA[C203291B-21F0-4227-8304-77E832BB5F80]]></uid>
-    </SQLTable>
-    <SQLTable>
         <name><![CDATA[users]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>796.00</x>
-            <y>287.00</y>
+            <x>871.00</x>
+            <y>244.00</y>
         </location>
         <size>
             <width>201.00</width>
             <height>220.00</height>
         </size>
-        <zorder>8</zorder>
+        <zorder>2</zorder>
         <SQLField>
             <name><![CDATA[id]]></name>
             <type><![CDATA[integer]]></type>
@@ -788,7 +1136,7 @@ The signup_type options are:
             <referencesTable>customers</referencesTable>
             <referencesField><![CDATA[id]]></referencesField>
             <referencesTable><![CDATA[customers]]></referencesTable>
-            <sourceCardinality>4</sourceCardinality>
+            <sourceCardinality>5</sourceCardinality>
             <destinationCardinality>1</destinationCardinality>
             <referencesFieldUID><![CDATA[35C348C3-9E44-4344-A0E8-7D36FEB98075]]></referencesFieldUID>
             <referencesTableUID><![CDATA[A752E7E7-6E5E-4531-AD10-2E18B0A20095]]></referencesTableUID>
@@ -850,17 +1198,90 @@ The signup_type options are:
         <uid><![CDATA[C5320A5A-85B5-472C-9005-63710BE5D6AA]]></uid>
     </SQLTable>
     <SQLTable>
-        <name><![CDATA[permissions]]></name>
+        <name><![CDATA[notifications]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>486.00</x>
-            <y>433.00</y>
+            <x>917.00</x>
+            <y>18.00</y>
         </location>
         <size>
-            <width>147.00</width>
-            <height>80.00</height>
+            <width>167.00</width>
+            <height>120.00</height>
         </size>
-        <zorder>6</zorder>
+        <zorder>13</zorder>
+        <SQLField>
+            <name><![CDATA[id]]></name>
+            <type><![CDATA[integer]]></type>
+            <primaryKey>1</primaryKey>
+            <autoIncrement><![CDATA[1]]></autoIncrement>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[F94631D9-1535-40F2-8A58-B359050D9061]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[user_id]]></name>
+            <type><![CDATA[integer]]></type>
+            <referencesField>id</referencesField>
+            <referencesTable>users</referencesTable>
+            <referencesField><![CDATA[id]]></referencesField>
+            <referencesTable><![CDATA[users]]></referencesTable>
+            <sourceCardinality>1</sourceCardinality>
+            <destinationCardinality>1</destinationCardinality>
+            <referencesFieldUID><![CDATA[B8F8EC52-9E6B-448F-9432-5AD6F85FBE3B]]></referencesFieldUID>
+            <referencesTableUID><![CDATA[C5320A5A-85B5-472C-9005-63710BE5D6AA]]></referencesTableUID>
+            <uid><![CDATA[7A409A81-2486-4955-B50F-986AE881CB73]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[notification1]]></name>
+            <type><![CDATA[boolean]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[765D66A0-630B-4F2E-BD70-734BCA8123BB]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[notification2]]></name>
+            <type><![CDATA[boolean]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[EC5ACBC4-21FC-426B-A0E0-0C20C1D30134]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[notification3]]></name>
+            <type><![CDATA[boolean]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[25EE2B48-2CD0-4BC5-8052-DAEADB92958A]]></uid>
+        </SQLField>
+        <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
+        <uid><![CDATA[D1839978-BAD8-4D37-A39C-B209B26B131F]]></uid>
+    </SQLTable>
+    <SQLComment>
+        <name><![CDATA[clients cont._38]]></name>
+        <comment><![CDATA[only_feedback_parters: if true, then only feedback partners will see notifications.  Otherwise, all visitors will see notifications.]]></comment>
+        <location>
+            <x>858.00</x>
+            <y>686.00</y>
+        </location>
+        <size>
+            <width>288.00</width>
+            <height>77.00</height>
+        </size>
+        <zorder>12</zorder>
+        <commentTitle><![CDATA[products table]]></commentTitle>
+        <hidden><![CDATA[0]]></hidden>
+        <labelColor><![CDATA[{0.997112,0.713501,0.670785,0.8}]]></labelColor>
+        <labelWindowIndex><![CDATA[0]]></labelWindowIndex>
+        <temporaryOriginalName><![CDATA[clients cont. note]]></temporaryOriginalName>
+        <uid><![CDATA[F484B987-F771-4E36-A156-66855D5D55A8]]></uid>
+    </SQLComment>
+    <SQLTable>
+        <name><![CDATA[questions]]></name>
+        <schema><![CDATA[]]></schema>
+        <location>
+            <x>1973.00</x>
+            <y>247.00</y>
+        </location>
+        <size>
+            <width>171.00</width>
+            <height>100.00</height>
+        </size>
+        <zorder>18</zorder>
         <SQLField>
             <name><![CDATA[id]]></name>
             <type><![CDATA[integer]]></type>
@@ -868,57 +1289,52 @@ The signup_type options are:
             <autoIncrement><![CDATA[1]]></autoIncrement>
             <forcedUnique><![CDATA[1]]></forcedUnique>
             <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[18C9B890-AAAE-43A9-8EA7-F63F5AD4C2B5]]></uid>
+            <uid><![CDATA[7F5D9086-A293-42FF-B270-7A4E43B40D52]]></uid>
         </SQLField>
         <SQLField>
-            <name><![CDATA[group]]></name>
-            <type><![CDATA[string]]></type>
-            <indexed><![CDATA[1]]></indexed>
+            <name><![CDATA[survey_id]]></name>
+            <type><![CDATA[integer]]></type>
+            <referencesField>id</referencesField>
+            <referencesTable>surveys</referencesTable>
+            <referencesField><![CDATA[id]]></referencesField>
+            <referencesTable><![CDATA[surveys]]></referencesTable>
+            <sourceCardinality>5</sourceCardinality>
+            <destinationCardinality>1</destinationCardinality>
+            <referencesFieldUID><![CDATA[30AD3E5A-F0DB-4733-94C1-5547B2874B55]]></referencesFieldUID>
+            <referencesTableUID><![CDATA[3BA90EF2-1C28-43B9-847A-FFE6091F4AB8]]></referencesTableUID>
             <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[30C21879-F4DA-4E14-A24C-5E950B1C7AAE]]></uid>
+            <uid><![CDATA[7087DFA5-9025-4940-8E2B-2BDE8636D13A]]></uid>
         </SQLField>
         <SQLField>
-            <name><![CDATA[name]]></name>
-            <type><![CDATA[string]]></type>
+            <name><![CDATA[sort_order]]></name>
+            <type><![CDATA[integer]]></type>
+            <defaultValue><![CDATA[0]]></defaultValue>
             <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[CCFCFDC7-1B8E-46A8-8E60-EE97150F0FBB]]></uid>
+            <uid><![CDATA[F6C17135-D417-40A2-8A97-1C4D325A5E2E]]></uid>
         </SQLField>
-        <hidden><![CDATA[0]]></hidden>
-        <labelWindowIndex><![CDATA[10]]></labelWindowIndex>
+        <SQLField>
+            <name><![CDATA[question]]></name>
+            <type><![CDATA[text]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[B0FC499E-D5CC-4F87-979A-BD2C40A040D1]]></uid>
+        </SQLField>
+        <labelWindowIndex><![CDATA[0]]></labelWindowIndex>
+        <temporaryOriginalName><![CDATA[questions]]></temporaryOriginalName>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
-        <uid><![CDATA[C8AC1B5B-848F-4AF9-B6BE-067128A402ED]]></uid>
+        <uid><![CDATA[FAC11301-231B-4195-AD9F-5FA3A19DA712]]></uid>
     </SQLTable>
-    <SQLComment>
-        <name><![CDATA[clients cont._39]]></name>
-        <comment><![CDATA[This is not used at the moment because the demo is setup on heroku.  Instead the screenshot field is used on the feedback_entries table.]]></comment>
-        <location>
-            <x>1571.00</x>
-            <y>233.00</y>
-        </location>
-        <size>
-            <width>219.00</width>
-            <height>123.00</height>
-        </size>
-        <zorder>15</zorder>
-        <commentTitle><![CDATA[feedback_entry_attachments table]]></commentTitle>
-        <hidden><![CDATA[0]]></hidden>
-        <labelColor><![CDATA[{0.997112,0.713501,0.670785,0.8}]]></labelColor>
-        <labelWindowIndex><![CDATA[1]]></labelWindowIndex>
-        <temporaryOriginalName><![CDATA[clients cont. note]]></temporaryOriginalName>
-        <uid><![CDATA[EE7F4787-EA93-495A-AD0D-CB01935C4EF2]]></uid>
-    </SQLComment>
     <SQLTable>
         <name><![CDATA[feedback_entries]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>1318.00</x>
-            <y>119.00</y>
+            <x>1822.00</x>
+            <y>431.00</y>
         </location>
         <size>
-            <width>201.00</width>
-            <height>280.00</height>
+            <width>207.00</width>
+            <height>320.00</height>
         </size>
-        <zorder>12</zorder>
+        <zorder>6</zorder>
         <SQLField>
             <name><![CDATA[id]]></name>
             <type><![CDATA[integer]]></type>
@@ -932,16 +1348,42 @@ The signup_type options are:
             <name><![CDATA[customer_id]]></name>
             <type><![CDATA[integer]]></type>
             <referencesField>id</referencesField>
-            <referencesTable>customers</referencesTable>
+            <referencesTable>customers_cont_1</referencesTable>
             <referencesField><![CDATA[id]]></referencesField>
-            <referencesTable><![CDATA[customers]]></referencesTable>
-            <sourceCardinality>4</sourceCardinality>
+            <referencesTable><![CDATA[customers_cont_1]]></referencesTable>
+            <sourceCardinality>5</sourceCardinality>
             <destinationCardinality>1</destinationCardinality>
-            <referencesFieldUID><![CDATA[35C348C3-9E44-4344-A0E8-7D36FEB98075]]></referencesFieldUID>
-            <referencesTableUID><![CDATA[A752E7E7-6E5E-4531-AD10-2E18B0A20095]]></referencesTableUID>
+            <referencesFieldUID><![CDATA[5736A74F-390F-44EE-BA53-18151BB08C88]]></referencesFieldUID>
+            <referencesTableUID><![CDATA[9164CD0C-0FD0-4A5F-A461-E5543E3C9B20]]></referencesTableUID>
             <indexed><![CDATA[1]]></indexed>
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[03CF8F7B-6C7E-4776-B0FD-00D859E7075D]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[checkpoint_id]]></name>
+            <type><![CDATA[integer]]></type>
+            <referencesField>id</referencesField>
+            <referencesTable>checkpoints</referencesTable>
+            <referencesField><![CDATA[id]]></referencesField>
+            <referencesTable><![CDATA[checkpoints]]></referencesTable>
+            <sourceCardinality>5</sourceCardinality>
+            <destinationCardinality>1</destinationCardinality>
+            <referencesFieldUID><![CDATA[74D1084D-67ED-4E14-8652-DD7A9256EB69]]></referencesFieldUID>
+            <referencesTableUID><![CDATA[816E8248-BC87-4274-B36D-FF68F8251638]]></referencesTableUID>
+            <uid><![CDATA[FDA007FE-15B4-4495-AEC5-D9B149AC0A57]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[feedback_partner_id]]></name>
+            <type><![CDATA[integer]]></type>
+            <referencesField>id</referencesField>
+            <referencesTable>feedback_partners</referencesTable>
+            <referencesField><![CDATA[id]]></referencesField>
+            <referencesTable><![CDATA[feedback_partners]]></referencesTable>
+            <sourceCardinality>5</sourceCardinality>
+            <destinationCardinality>1</destinationCardinality>
+            <referencesFieldUID><![CDATA[D6D71A0B-AE5A-42A7-9B80-6536B6B5B2BC]]></referencesFieldUID>
+            <referencesTableUID><![CDATA[482C215B-CE8A-444D-ABE2-18B130FC7AAC]]></referencesTableUID>
+            <uid><![CDATA[BE1F8D0B-9866-449E-BBDB-7921A61EB91B]]></uid>
         </SQLField>
         <SQLField>
             <name><![CDATA[comprehension]]></name>
@@ -1006,7 +1448,7 @@ The signup_type options are:
     <SQLDocumentInfo>
         <encodedPrintInfo><![CDATA[BAtzdHJlYW10eXBlZIHoA4QBQISEhAtOU1ByaW50SW5mbwGEhAhOU09iamVjdACFkoSEhBNOU011dGFibGVEaWN0aW9uYXJ5AISEDE5TRGljdGlvbmFyeQCUhAFpDZKEhIQITlNTdHJpbmcBlIQBKw5OU1BNUGFnZUZvcm1hdIaShISEDU5TTXV0YWJsZURhdGEAhIQGTlNEYXRhAJSXgbIbhAdbNzA5MGNdPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHBsaXN0IFBVQkxJQyAiLS8vQXBwbGUvL0RURCBQTElTVCAxLjAvL0VOIiAiaHR0cDovL3d3dy5hcHBsZS5jb20vRFREcy9Qcm9wZXJ0eUxpc3QtMS4wLmR0ZCI+CjxwbGlzdCB2ZXJzaW9uPSIxLjAiPgo8ZGljdD4KCTxrZXk+Y29tLmFwcGxlLnByaW50LlBhZ2VGb3JtYXQuUE1Ib3Jpem9udGFsUmVzPC9rZXk+Cgk8ZGljdD4KCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuY3JlYXRvcjwva2V5PgoJCTxzdHJpbmc+Y29tLmFwcGxlLmpvYnRpY2tldDwvc3RyaW5nPgoJCTxrZXk+Y29tLmFwcGxlLnByaW50LnRpY2tldC5pdGVtQXJyYXk8L2tleT4KCQk8YXJyYXk+CgkJCTxkaWN0PgoJCQkJPGtleT5jb20uYXBwbGUucHJpbnQuUGFnZUZvcm1hdC5QTUhvcml6b250YWxSZXM8L2tleT4KCQkJCTxyZWFsPjcyPC9yZWFsPgoJCQkJPGtleT5jb20uYXBwbGUucHJpbnQudGlja2V0LnN0YXRlRmxhZzwva2V5PgoJCQkJPGludGVnZXI+MDwvaW50ZWdlcj4KCQkJPC9kaWN0PgoJCTwvYXJyYXk+Cgk8L2RpY3Q+Cgk8a2V5PmNvbS5hcHBsZS5wcmludC5QYWdlRm9ybWF0LlBNT3JpZW50YXRpb248L2tleT4KCTxkaWN0PgoJCTxrZXk+Y29tLmFwcGxlLnByaW50LnRpY2tldC5jcmVhdG9yPC9rZXk+CgkJPHN0cmluZz5jb20uYXBwbGUuam9idGlja2V0PC9zdHJpbmc+CgkJPGtleT5jb20uYXBwbGUucHJpbnQudGlja2V0Lml0ZW1BcnJheTwva2V5PgoJCTxhcnJheT4KCQkJPGRpY3Q+CgkJCQk8a2V5PmNvbS5hcHBsZS5wcmludC5QYWdlRm9ybWF0LlBNT3JpZW50YXRpb248L2tleT4KCQkJCTxpbnRlZ2VyPjE8L2ludGVnZXI+CgkJCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuc3RhdGVGbGFnPC9rZXk+CgkJCQk8aW50ZWdlcj4wPC9pbnRlZ2VyPgoJCQk8L2RpY3Q+CgkJPC9hcnJheT4KCTwvZGljdD4KCTxrZXk+Y29tLmFwcGxlLnByaW50LlBhZ2VGb3JtYXQuUE1TY2FsaW5nPC9rZXk+Cgk8ZGljdD4KCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuY3JlYXRvcjwva2V5PgoJCTxzdHJpbmc+Y29tLmFwcGxlLmpvYnRpY2tldDwvc3RyaW5nPgoJCTxrZXk+Y29tLmFwcGxlLnByaW50LnRpY2tldC5pdGVtQXJyYXk8L2tleT4KCQk8YXJyYXk+CgkJCTxkaWN0PgoJCQkJPGtleT5jb20uYXBwbGUucHJpbnQuUGFnZUZvcm1hdC5QTVNjYWxpbmc8L2tleT4KCQkJCTxyZWFsPjE8L3JlYWw+CgkJCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuc3RhdGVGbGFnPC9rZXk+CgkJCQk8aW50ZWdlcj4wPC9pbnRlZ2VyPgoJCQk8L2RpY3Q+CgkJPC9hcnJheT4KCTwvZGljdD4KCTxrZXk+Y29tLmFwcGxlLnByaW50LlBhZ2VGb3JtYXQuUE1WZXJ0aWNhbFJlczwva2V5PgoJPGRpY3Q+CgkJPGtleT5jb20uYXBwbGUucHJpbnQudGlja2V0LmNyZWF0b3I8L2tleT4KCQk8c3RyaW5nPmNvbS5hcHBsZS5qb2J0aWNrZXQ8L3N0cmluZz4KCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuaXRlbUFycmF5PC9rZXk+CgkJPGFycmF5PgoJCQk8ZGljdD4KCQkJCTxrZXk+Y29tLmFwcGxlLnByaW50LlBhZ2VGb3JtYXQuUE1WZXJ0aWNhbFJlczwva2V5PgoJCQkJPHJlYWw+NzI8L3JlYWw+CgkJCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuc3RhdGVGbGFnPC9rZXk+CgkJCQk8aW50ZWdlcj4wPC9pbnRlZ2VyPgoJCQk8L2RpY3Q+CgkJPC9hcnJheT4KCTwvZGljdD4KCTxrZXk+Y29tLmFwcGxlLnByaW50LlBhZ2VGb3JtYXQuUE1WZXJ0aWNhbFNjYWxpbmc8L2tleT4KCTxkaWN0PgoJCTxrZXk+Y29tLmFwcGxlLnByaW50LnRpY2tldC5jcmVhdG9yPC9rZXk+CgkJPHN0cmluZz5jb20uYXBwbGUuam9idGlja2V0PC9zdHJpbmc+CgkJPGtleT5jb20uYXBwbGUucHJpbnQudGlja2V0Lml0ZW1BcnJheTwva2V5PgoJCTxhcnJheT4KCQkJPGRpY3Q+CgkJCQk8a2V5PmNvbS5hcHBsZS5wcmludC5QYWdlRm9ybWF0LlBNVmVydGljYWxTY2FsaW5nPC9rZXk+CgkJCQk8cmVhbD4xPC9yZWFsPgoJCQkJPGtleT5jb20uYXBwbGUucHJpbnQudGlja2V0LnN0YXRlRmxhZzwva2V5PgoJCQkJPGludGVnZXI+MDwvaW50ZWdlcj4KCQkJPC9kaWN0PgoJCTwvYXJyYXk+Cgk8L2RpY3Q+Cgk8a2V5PmNvbS5hcHBsZS5wcmludC5zdWJUaWNrZXQucGFwZXJfaW5mb190aWNrZXQ8L2tleT4KCTxkaWN0PgoJCTxrZXk+UE1QUERQYXBlckNvZGVOYW1lPC9rZXk+CgkJPGRpY3Q+CgkJCTxrZXk+Y29tLmFwcGxlLnByaW50LnRpY2tldC5jcmVhdG9yPC9rZXk+CgkJCTxzdHJpbmc+Y29tLmFwcGxlLmpvYnRpY2tldDwvc3RyaW5nPgoJCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuaXRlbUFycmF5PC9rZXk+CgkJCTxhcnJheT4KCQkJCTxkaWN0PgoJCQkJCTxrZXk+UE1QUERQYXBlckNvZGVOYW1lPC9rZXk+CgkJCQkJPHN0cmluZz5MZXR0ZXI8L3N0cmluZz4KCQkJCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuc3RhdGVGbGFnPC9rZXk+CgkJCQkJPGludGVnZXI+MDwvaW50ZWdlcj4KCQkJCTwvZGljdD4KCQkJPC9hcnJheT4KCQk8L2RpY3Q+CgkJPGtleT5QTVBQRFRyYW5zbGF0aW9uU3RyaW5nUGFwZXJOYW1lPC9rZXk+CgkJPGRpY3Q+CgkJCTxrZXk+Y29tLmFwcGxlLnByaW50LnRpY2tldC5jcmVhdG9yPC9rZXk+CgkJCTxzdHJpbmc+Y29tLmFwcGxlLmpvYnRpY2tldDwvc3RyaW5nPgoJCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuaXRlbUFycmF5PC9rZXk+CgkJCTxhcnJheT4KCQkJCTxkaWN0PgoJCQkJCTxrZXk+UE1QUERUcmFuc2xhdGlvblN0cmluZ1BhcGVyTmFtZTwva2V5PgoJCQkJCTxzdHJpbmc+VVMgTGV0dGVyPC9zdHJpbmc+CgkJCQkJPGtleT5jb20uYXBwbGUucHJpbnQudGlja2V0LnN0YXRlRmxhZzwva2V5PgoJCQkJCTxpbnRlZ2VyPjA8L2ludGVnZXI+CgkJCQk8L2RpY3Q+CgkJCTwvYXJyYXk+CgkJPC9kaWN0PgoJCTxrZXk+UE1UaW9nYVBhcGVyTmFtZTwva2V5PgoJCTxkaWN0PgoJCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuY3JlYXRvcjwva2V5PgoJCQk8c3RyaW5nPmNvbS5hcHBsZS5qb2J0aWNrZXQ8L3N0cmluZz4KCQkJPGtleT5jb20uYXBwbGUucHJpbnQudGlja2V0Lml0ZW1BcnJheTwva2V5PgoJCQk8YXJyYXk+CgkJCQk8ZGljdD4KCQkJCQk8a2V5PlBNVGlvZ2FQYXBlck5hbWU8L2tleT4KCQkJCQk8c3RyaW5nPm5hLWxldHRlcjwvc3RyaW5nPgoJCQkJCTxrZXk+Y29tLmFwcGxlLnByaW50LnRpY2tldC5zdGF0ZUZsYWc8L2tleT4KCQkJCQk8aW50ZWdlcj4wPC9pbnRlZ2VyPgoJCQkJPC9kaWN0PgoJCQk8L2FycmF5PgoJCTwvZGljdD4KCQk8a2V5PmNvbS5hcHBsZS5wcmludC5QYWdlRm9ybWF0LlBNQWRqdXN0ZWRQYWdlUmVjdDwva2V5PgoJCTxkaWN0PgoJCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuY3JlYXRvcjwva2V5PgoJCQk8c3RyaW5nPmNvbS5hcHBsZS5qb2J0aWNrZXQ8L3N0cmluZz4KCQkJPGtleT5jb20uYXBwbGUucHJpbnQudGlja2V0Lml0ZW1BcnJheTwva2V5PgoJCQk8YXJyYXk+CgkJCQk8ZGljdD4KCQkJCQk8a2V5PmNvbS5hcHBsZS5wcmludC5QYWdlRm9ybWF0LlBNQWRqdXN0ZWRQYWdlUmVjdDwva2V5PgoJCQkJCTxhcnJheT4KCQkJCQkJPGludGVnZXI+MDwvaW50ZWdlcj4KCQkJCQkJPGludGVnZXI+MDwvaW50ZWdlcj4KCQkJCQkJPHJlYWw+NzM0PC9yZWFsPgoJCQkJCQk8cmVhbD41NzY8L3JlYWw+CgkJCQkJPC9hcnJheT4KCQkJCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuc3RhdGVGbGFnPC9rZXk+CgkJCQkJPGludGVnZXI+MDwvaW50ZWdlcj4KCQkJCTwvZGljdD4KCQkJPC9hcnJheT4KCQk8L2RpY3Q+CgkJPGtleT5jb20uYXBwbGUucHJpbnQuUGFnZUZvcm1hdC5QTUFkanVzdGVkUGFwZXJSZWN0PC9rZXk+CgkJPGRpY3Q+CgkJCTxrZXk+Y29tLmFwcGxlLnByaW50LnRpY2tldC5jcmVhdG9yPC9rZXk+CgkJCTxzdHJpbmc+Y29tLmFwcGxlLmpvYnRpY2tldDwvc3RyaW5nPgoJCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuaXRlbUFycmF5PC9rZXk+CgkJCTxhcnJheT4KCQkJCTxkaWN0PgoJCQkJCTxrZXk+Y29tLmFwcGxlLnByaW50LlBhZ2VGb3JtYXQuUE1BZGp1c3RlZFBhcGVyUmVjdDwva2V5PgoJCQkJCTxhcnJheT4KCQkJCQkJPHJlYWw+LTE4PC9yZWFsPgoJCQkJCQk8cmVhbD4tMTg8L3JlYWw+CgkJCQkJCTxyZWFsPjc3NDwvcmVhbD4KCQkJCQkJPHJlYWw+NTk0PC9yZWFsPgoJCQkJCTwvYXJyYXk+CgkJCQkJPGtleT5jb20uYXBwbGUucHJpbnQudGlja2V0LnN0YXRlRmxhZzwva2V5PgoJCQkJCTxpbnRlZ2VyPjA8L2ludGVnZXI+CgkJCQk8L2RpY3Q+CgkJCTwvYXJyYXk+CgkJPC9kaWN0PgoJCTxrZXk+Y29tLmFwcGxlLnByaW50LlBhcGVySW5mby5QTVBQRFBhcGVyRGltZW5zaW9uPC9rZXk+CgkJPGRpY3Q+CgkJCTxrZXk+Y29tLmFwcGxlLnByaW50LnRpY2tldC5jcmVhdG9yPC9rZXk+CgkJCTxzdHJpbmc+Y29tLmFwcGxlLmpvYnRpY2tldDwvc3RyaW5nPgoJCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuaXRlbUFycmF5PC9rZXk+CgkJCTxhcnJheT4KCQkJCTxkaWN0PgoJCQkJCTxrZXk+Y29tLmFwcGxlLnByaW50LlBhcGVySW5mby5QTVBQRFBhcGVyRGltZW5zaW9uPC9rZXk+CgkJCQkJPGFycmF5PgoJCQkJCQk8aW50ZWdlcj4wPC9pbnRlZ2VyPgoJCQkJCQk8aW50ZWdlcj4wPC9pbnRlZ2VyPgoJCQkJCQk8cmVhbD42MTI8L3JlYWw+CgkJCQkJCTxyZWFsPjc5MjwvcmVhbD4KCQkJCQk8L2FycmF5PgoJCQkJCTxrZXk+Y29tLmFwcGxlLnByaW50LnRpY2tldC5zdGF0ZUZsYWc8L2tleT4KCQkJCQk8aW50ZWdlcj4wPC9pbnRlZ2VyPgoJCQkJPC9kaWN0PgoJCQk8L2FycmF5PgoJCTwvZGljdD4KCQk8a2V5PmNvbS5hcHBsZS5wcmludC5QYXBlckluZm8uUE1QYXBlck5hbWU8L2tleT4KCQk8ZGljdD4KCQkJPGtleT5jb20uYXBwbGUucHJpbnQudGlja2V0LmNyZWF0b3I8L2tleT4KCQkJPHN0cmluZz5jb20uYXBwbGUuam9idGlja2V0PC9zdHJpbmc+CgkJCTxrZXk+Y29tLmFwcGxlLnByaW50LnRpY2tldC5pdGVtQXJyYXk8L2tleT4KCQkJPGFycmF5PgoJCQkJPGRpY3Q+CgkJCQkJPGtleT5jb20uYXBwbGUucHJpbnQuUGFwZXJJbmZvLlBNUGFwZXJOYW1lPC9rZXk+CgkJCQkJPHN0cmluZz5uYS1sZXR0ZXI8L3N0cmluZz4KCQkJCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuc3RhdGVGbGFnPC9rZXk+CgkJCQkJPGludGVnZXI+MDwvaW50ZWdlcj4KCQkJCTwvZGljdD4KCQkJPC9hcnJheT4KCQk8L2RpY3Q+CgkJPGtleT5jb20uYXBwbGUucHJpbnQuUGFwZXJJbmZvLlBNVW5hZGp1c3RlZFBhZ2VSZWN0PC9rZXk+CgkJPGRpY3Q+CgkJCTxrZXk+Y29tLmFwcGxlLnByaW50LnRpY2tldC5jcmVhdG9yPC9rZXk+CgkJCTxzdHJpbmc+Y29tLmFwcGxlLmpvYnRpY2tldDwvc3RyaW5nPgoJCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuaXRlbUFycmF5PC9rZXk+CgkJCTxhcnJheT4KCQkJCTxkaWN0PgoJCQkJCTxrZXk+Y29tLmFwcGxlLnByaW50LlBhcGVySW5mby5QTVVuYWRqdXN0ZWRQYWdlUmVjdDwva2V5PgoJCQkJCTxhcnJheT4KCQkJCQkJPGludGVnZXI+MDwvaW50ZWdlcj4KCQkJCQkJPGludGVnZXI+MDwvaW50ZWdlcj4KCQkJCQkJPHJlYWw+NzM0PC9yZWFsPgoJCQkJCQk8cmVhbD41NzY8L3JlYWw+CgkJCQkJPC9hcnJheT4KCQkJCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuc3RhdGVGbGFnPC9rZXk+CgkJCQkJPGludGVnZXI+MDwvaW50ZWdlcj4KCQkJCTwvZGljdD4KCQkJPC9hcnJheT4KCQk8L2RpY3Q+CgkJPGtleT5jb20uYXBwbGUucHJpbnQuUGFwZXJJbmZvLlBNVW5hZGp1c3RlZFBhcGVyUmVjdDwva2V5PgoJCTxkaWN0PgoJCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuY3JlYXRvcjwva2V5PgoJCQk8c3RyaW5nPmNvbS5hcHBsZS5qb2J0aWNrZXQ8L3N0cmluZz4KCQkJPGtleT5jb20uYXBwbGUucHJpbnQudGlja2V0Lml0ZW1BcnJheTwva2V5PgoJCQk8YXJyYXk+CgkJCQk8ZGljdD4KCQkJCQk8a2V5PmNvbS5hcHBsZS5wcmludC5QYXBlckluZm8uUE1VbmFkanVzdGVkUGFwZXJSZWN0PC9rZXk+CgkJCQkJPGFycmF5PgoJCQkJCQk8cmVhbD4tMTg8L3JlYWw+CgkJCQkJCTxyZWFsPi0xODwvcmVhbD4KCQkJCQkJPHJlYWw+Nzc0PC9yZWFsPgoJCQkJCQk8cmVhbD41OTQ8L3JlYWw+CgkJCQkJPC9hcnJheT4KCQkJCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuc3RhdGVGbGFnPC9rZXk+CgkJCQkJPGludGVnZXI+MDwvaW50ZWdlcj4KCQkJCTwvZGljdD4KCQkJPC9hcnJheT4KCQk8L2RpY3Q+CgkJPGtleT5jb20uYXBwbGUucHJpbnQuUGFwZXJJbmZvLnBwZC5QTVBhcGVyTmFtZTwva2V5PgoJCTxkaWN0PgoJCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuY3JlYXRvcjwva2V5PgoJCQk8c3RyaW5nPmNvbS5hcHBsZS5qb2J0aWNrZXQ8L3N0cmluZz4KCQkJPGtleT5jb20uYXBwbGUucHJpbnQudGlja2V0Lml0ZW1BcnJheTwva2V5PgoJCQk8YXJyYXk+CgkJCQk8ZGljdD4KCQkJCQk8a2V5PmNvbS5hcHBsZS5wcmludC5QYXBlckluZm8ucHBkLlBNUGFwZXJOYW1lPC9rZXk+CgkJCQkJPHN0cmluZz5MZXR0ZXI8L3N0cmluZz4KCQkJCQk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQuc3RhdGVGbGFnPC9rZXk+CgkJCQkJPGludGVnZXI+MDwvaW50ZWdlcj4KCQkJCTwvZGljdD4KCQkJPC9hcnJheT4KCQk8L2RpY3Q+CgkJPGtleT5jb20uYXBwbGUucHJpbnQudGlja2V0LkFQSVZlcnNpb248L2tleT4KCQk8c3RyaW5nPjAwLjIwPC9zdHJpbmc+CgkJPGtleT5jb20uYXBwbGUucHJpbnQudGlja2V0LnR5cGU8L2tleT4KCQk8c3RyaW5nPmNvbS5hcHBsZS5wcmludC5QYXBlckluZm9UaWNrZXQ8L3N0cmluZz4KCTwvZGljdD4KCTxrZXk+Y29tLmFwcGxlLnByaW50LnRpY2tldC5BUElWZXJzaW9uPC9rZXk+Cgk8c3RyaW5nPjAwLjIwPC9zdHJpbmc+Cgk8a2V5PmNvbS5hcHBsZS5wcmludC50aWNrZXQudHlwZTwva2V5PgoJPHN0cmluZz5jb20uYXBwbGUucHJpbnQuUGFnZUZvcm1hdFRpY2tldDwvc3RyaW5nPgo8L2RpY3Q+CjwvcGxpc3Q+CoaShJmZC05TUGFwZXJTaXplhpKEhIQHTlNWYWx1ZQCUhAEqhIQLe0NHU2l6ZT1kZH2fgWQCgRgDhpKEmZkWTlNIb3Jpem9udGFsbHlDZW50ZXJlZIaShISECE5TTnVtYmVyAJ+ehIQBY6EBhpKEmZkUTlNWZXJ0aWNhbGx5Q2VudGVyZWSGkqKShJmZDE5TTGVmdE1hcmdpboaShKOehIQBZKIShpKEmZkNTlNSaWdodE1hcmdpboaSp5KEmZkLTlNUb3BNYXJnaW6GkoSjnqiiHoaShJmZDU5TT3JpZW50YXRpb26GkoSjnoSEAXGjAIaShJmZFU5TSG9yaXpvbmFsUGFnaW5hdGlvboaSrZKEmZkUTlNWZXJ0aWNhbFBhZ2luYXRpb26Gkq2ShJmZDk5TQm90dG9tTWFyZ2luhpKEo56oojSGkoSZmQ9OU1NjYWxpbmdGYWN0b3KGkoSjnqiiAYaShJmZC05TUGFwZXJOYW1lhpKEmZkJbmEtbGV0dGVyhoaG]]></encodedPrintInfo>
         <autoSizeTablesOption><![CDATA[0]]></autoSizeTablesOption>
-        <documentScaleFactor><![CDATA[1.35]]></documentScaleFactor>
+        <documentScaleFactor><![CDATA[0.75]]></documentScaleFactor>
         <exportDialect><![CDATA[Rails]]></exportDialect>
         <fileversion><![CDATA[3.1]]></fileversion>
         <generator><![CDATA[com.malcolmhardie.sqleditor]]></generator>
@@ -1016,17 +1458,17 @@ The signup_type options are:
         <overviewPanelHidden><![CDATA[0]]></overviewPanelHidden>
         <pageBoundariesVisible><![CDATA[0]]></pageBoundariesVisible>
         <PageGridVisible><![CDATA[0]]></PageGridVisible>
-        <RightSidebarWidth><![CDATA[1457.000000]]></RightSidebarWidth>
+        <RightSidebarWidth><![CDATA[1954.000000]]></RightSidebarWidth>
         <sidebarIndex><![CDATA[0]]></sidebarIndex>
         <snapToGrid><![CDATA[0]]></snapToGrid>
         <SourceSidebarWidth><![CDATA[0.000000]]></SourceSidebarWidth>
         <SQLEditorFileFormatVersion><![CDATA[3.1]]></SQLEditorFileFormatVersion>
         <uid><![CDATA[71AA75CA-6EAB-4BCC-966D-8B90CF069194]]></uid>
-        <windowHeight><![CDATA[1027.000000]]></windowHeight>
-        <windowLocationX><![CDATA[65.000000]]></windowLocationX>
-        <windowLocationY><![CDATA[374.000000]]></windowLocationY>
-        <windowScrollOrigin><![CDATA[{1139.5, 1}]]></windowScrollOrigin>
-        <windowWidth><![CDATA[1734.000000]]></windowWidth>
+        <windowHeight><![CDATA[1246.000000]]></windowHeight>
+        <windowLocationX><![CDATA[191.000000]]></windowLocationX>
+        <windowLocationY><![CDATA[137.000000]]></windowLocationY>
+        <windowScrollOrigin><![CDATA[{133, 14.5}]]></windowScrollOrigin>
+        <windowWidth><![CDATA[2231.000000]]></windowWidth>
     </SQLDocumentInfo>
     <AllowsIndexRenamingOnInsert><![CDATA[1]]></AllowsIndexRenamingOnInsert>
     <containerName><![CDATA[model controller orginal container]]></containerName>
