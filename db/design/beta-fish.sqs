@@ -231,8 +231,8 @@ The signup_type options are:
         <name><![CDATA[surveys]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>1773.00</x>
-            <y>247.00</y>
+            <x>1700.00</x>
+            <y>259.00</y>
         </location>
         <size>
             <width>150.00</width>
@@ -595,8 +595,8 @@ The signup_type options are:
         <name><![CDATA[taken_surveys]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>1516.00</x>
-            <y>254.00</y>
+            <x>1443.00</x>
+            <y>266.00</y>
         </location>
         <size>
             <width>207.00</width>
@@ -1274,8 +1274,8 @@ feedback_partner_id: can be nil if taken anonymously.]]></comment>
         <name><![CDATA[questions]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>1973.00</x>
-            <y>247.00</y>
+            <x>1900.00</x>
+            <y>259.00</y>
         </location>
         <size>
             <width>171.00</width>
@@ -1458,7 +1458,7 @@ feedback_partner_id: can be nil if taken anonymously.]]></comment>
         <overviewPanelHidden><![CDATA[0]]></overviewPanelHidden>
         <pageBoundariesVisible><![CDATA[0]]></pageBoundariesVisible>
         <PageGridVisible><![CDATA[0]]></PageGridVisible>
-        <RightSidebarWidth><![CDATA[1954.000000]]></RightSidebarWidth>
+        <RightSidebarWidth><![CDATA[2230.000000]]></RightSidebarWidth>
         <sidebarIndex><![CDATA[0]]></sidebarIndex>
         <snapToGrid><![CDATA[0]]></snapToGrid>
         <SourceSidebarWidth><![CDATA[0.000000]]></SourceSidebarWidth>
@@ -1467,7 +1467,7 @@ feedback_partner_id: can be nil if taken anonymously.]]></comment>
         <windowHeight><![CDATA[1246.000000]]></windowHeight>
         <windowLocationX><![CDATA[191.000000]]></windowLocationX>
         <windowLocationY><![CDATA[137.000000]]></windowLocationY>
-        <windowScrollOrigin><![CDATA[{133, 14.5}]]></windowScrollOrigin>
+        <windowScrollOrigin><![CDATA[{30, 11}]]></windowScrollOrigin>
         <windowWidth><![CDATA[2231.000000]]></windowWidth>
     </SQLDocumentInfo>
     <AllowsIndexRenamingOnInsert><![CDATA[1]]></AllowsIndexRenamingOnInsert>
