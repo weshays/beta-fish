@@ -55,6 +55,7 @@
             <type><![CDATA[datetime]]></type>
             <uid><![CDATA[F17619A4-32C7-429B-B353-DA1453A45143]]></uid>
         </SQLField>
+        <labelWindowIndex><![CDATA[13]]></labelWindowIndex>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[09415DDB-0B29-4084-9CBE-3F83C6B4AD19]]></uid>
     </SQLTable>
@@ -111,6 +112,7 @@
             <type><![CDATA[datetime]]></type>
             <uid><![CDATA[11C74F2D-AB46-41A8-A2CA-A4C6F27EC985]]></uid>
         </SQLField>
+        <labelWindowIndex><![CDATA[12]]></labelWindowIndex>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[140CC746-F5EF-492A-BD42-D28A7DEC4A53]]></uid>
     </SQLTable>
@@ -134,7 +136,7 @@ The signup_type options are:
         <commentTitle><![CDATA[signup_links table]]></commentTitle>
         <hidden><![CDATA[0]]></hidden>
         <labelColor><![CDATA[{0.997112,0.713501,0.670785,0.8}]]></labelColor>
-        <labelWindowIndex><![CDATA[9]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[21]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[clients cont. note]]></temporaryOriginalName>
         <uid><![CDATA[14FB4D6D-0BB2-4126-A395-768ADCD4E346]]></uid>
     </SQLComment>
@@ -180,7 +182,7 @@ The signup_type options are:
             <type><![CDATA[integer]]></type>
             <uid><![CDATA[C830FC7A-91F4-4757-9C0D-5C8CF1495D80]]></uid>
         </SQLField>
-        <labelWindowIndex><![CDATA[4]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[17]]></labelWindowIndex>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[2773B0C1-BFBE-4D3B-A2E4-4E2291CC0E8C]]></uid>
     </SQLTable>
@@ -223,7 +225,7 @@ The signup_type options are:
             <type><![CDATA[datetime]]></type>
             <uid><![CDATA[9853ADCE-FC7D-4CDB-9460-E0DD67A0C5B0]]></uid>
         </SQLField>
-        <labelWindowIndex><![CDATA[7]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[20]]></labelWindowIndex>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[39A6C12A-945C-4FE8-AD63-DB8C99EC978F]]></uid>
     </SQLTable>
@@ -275,7 +277,7 @@ The signup_type options are:
             <type><![CDATA[datetime]]></type>
             <uid><![CDATA[CC2AA594-A05E-4A07-8209-6CCBEC919C45]]></uid>
         </SQLField>
-        <labelWindowIndex><![CDATA[0]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[11]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[batches_meetings]]></temporaryOriginalName>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[3BA90EF2-1C28-43B9-847A-FFE6091F4AB8]]></uid>
@@ -321,6 +323,7 @@ The signup_type options are:
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[B71B2190-473E-41BE-88A8-13A39A71C804]]></uid>
         </SQLField>
+        <labelWindowIndex><![CDATA[10]]></labelWindowIndex>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[4143B88B-483B-4E64-A6BA-CEF20ACA07DA]]></uid>
     </SQLTable>
@@ -333,7 +336,7 @@ The signup_type options are:
         </location>
         <size>
             <width>200.00</width>
-            <height>200.00</height>
+            <height>220.00</height>
         </size>
         <zorder>14</zorder>
         <SQLField>
@@ -377,6 +380,11 @@ The signup_type options are:
             <uid><![CDATA[B303F38B-7189-4DB7-9D9A-241A2EBD45C5]]></uid>
         </SQLField>
         <SQLField>
+            <name><![CDATA[meta_data]]></name>
+            <type><![CDATA[json]]></type>
+            <uid><![CDATA[6A23055F-F9FB-4FE6-B65B-DBA3D2E3CB5B]]></uid>
+        </SQLField>
+        <SQLField>
             <name><![CDATA[created_at]]></name>
             <type><![CDATA[datetime]]></type>
             <uid><![CDATA[DD331103-D76A-4A16-853A-E4060D9E3C74]]></uid>
@@ -386,6 +394,7 @@ The signup_type options are:
             <type><![CDATA[integer]]></type>
             <uid><![CDATA[BD722934-63F9-4953-85E4-AE3AA98E6CF3]]></uid>
         </SQLField>
+        <labelWindowIndex><![CDATA[9]]></labelWindowIndex>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[482C215B-CE8A-444D-ABE2-18B130FC7AAC]]></uid>
     </SQLTable>
@@ -541,7 +550,7 @@ The signup_type options are:
             <type><![CDATA[datetime]]></type>
             <uid><![CDATA[534229A6-73BC-4F88-92A6-3263EA11BF80]]></uid>
         </SQLField>
-        <labelWindowIndex><![CDATA[11]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[22]]></labelWindowIndex>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[5233A0FA-BF88-4D71-9F4F-D8DAAC40E88F]]></uid>
     </SQLTable>
@@ -566,7 +575,7 @@ The signup_type options are:
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[45AB3AA3-42EC-4255-9B7C-FC922534A174]]></uid>
         </SQLField>
-        <labelWindowIndex><![CDATA[0]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[8]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[companies_cont_1]]></temporaryOriginalName>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[6493A05C-5F3B-42A6-AAD1-A42BD17FB64D]]></uid>
@@ -587,7 +596,7 @@ The signup_type options are:
         <commentTitle><![CDATA[customers table]]></commentTitle>
         <hidden><![CDATA[0]]></hidden>
         <labelColor><![CDATA[{0.997112,0.713501,0.670785,0.8}]]></labelColor>
-        <labelWindowIndex><![CDATA[3]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[16]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[clients cont. note]]></temporaryOriginalName>
         <uid><![CDATA[728CE4F9-A6B8-48EC-959D-6CFD540FCD61]]></uid>
     </SQLComment>
@@ -652,7 +661,7 @@ The signup_type options are:
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[46F338D6-C874-4B43-87CA-443E8C1FE799]]></uid>
         </SQLField>
-        <labelWindowIndex><![CDATA[0]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[7]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[Table24]]></temporaryOriginalName>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[7CA80CD7-06E7-445E-A7B1-E334C96662AF]]></uid>
@@ -723,6 +732,7 @@ The signup_type options are:
             <type><![CDATA[datetime]]></type>
             <uid><![CDATA[3F144886-E39C-4CA7-953E-399BC44AB4EE]]></uid>
         </SQLField>
+        <labelWindowIndex><![CDATA[6]]></labelWindowIndex>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[816E8248-BC87-4274-B36D-FF68F8251638]]></uid>
     </SQLTable>
@@ -803,7 +813,7 @@ The signup_type options are:
             <uid><![CDATA[5A1DB717-F724-4754-8839-CDD934677BBE]]></uid>
         </SQLField>
         <hidden><![CDATA[0]]></hidden>
-        <labelWindowIndex><![CDATA[0]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[5]]></labelWindowIndex>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[8482A0C0-595D-4D37-888D-E4AAB13B4FCB]]></uid>
     </SQLTable>
@@ -828,7 +838,7 @@ The signup_type options are:
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[5736A74F-390F-44EE-BA53-18151BB08C88]]></uid>
         </SQLField>
-        <labelWindowIndex><![CDATA[2]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[15]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[companies_cont_1]]></temporaryOriginalName>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[9164CD0C-0FD0-4A5F-A461-E5543E3C9B20]]></uid>
@@ -848,7 +858,7 @@ The signup_type options are:
         <commentTitle><![CDATA[Billing]]></commentTitle>
         <hidden><![CDATA[0]]></hidden>
         <labelColor><![CDATA[{0,0.968633,0.0666618,0.8}]]></labelColor>
-        <labelWindowIndex><![CDATA[6]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[19]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[clients cont. note]]></temporaryOriginalName>
         <uid><![CDATA[98812CBE-6B04-4B8E-B5A8-C52C1AED3FF7]]></uid>
     </SQLComment>
@@ -1012,7 +1022,7 @@ The signup_type options are:
             <uid><![CDATA[864047CE-DAD8-4B58-BC93-EFE2DBA19533]]></uid>
         </SQLField>
         <hidden><![CDATA[0]]></hidden>
-        <labelWindowIndex><![CDATA[5]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[18]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[companies]]></temporaryOriginalName>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[A752E7E7-6E5E-4531-AD10-2E18B0A20095]]></uid>
@@ -1084,6 +1094,7 @@ The signup_type options are:
             <type><![CDATA[datetime]]></type>
             <uid><![CDATA[356EDC0A-04E4-45E2-8FA9-FEF1347A52BB]]></uid>
         </SQLField>
+        <labelWindowIndex><![CDATA[4]]></labelWindowIndex>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[C06C6AFD-18C5-45B4-88B9-3FFD5548313F]]></uid>
     </SQLTable>
@@ -1104,7 +1115,7 @@ feedback_partner_id: can be nil if taken anonymously.]]></comment>
         <commentTitle><![CDATA[feedback_entries table]]></commentTitle>
         <hidden><![CDATA[0]]></hidden>
         <labelColor><![CDATA[{0.997112,0.713501,0.670785,0.8}]]></labelColor>
-        <labelWindowIndex><![CDATA[2]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[14]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[clients cont. note]]></temporaryOriginalName>
         <uid><![CDATA[C1D52753-221D-4599-9FCA-5253E071A973]]></uid>
     </SQLComment>
@@ -1192,7 +1203,7 @@ feedback_partner_id: can be nil if taken anonymously.]]></comment>
             <uid><![CDATA[28C82CE5-A039-4BB1-B76A-59D66FB08B6F]]></uid>
         </SQLField>
         <hidden><![CDATA[0]]></hidden>
-        <labelWindowIndex><![CDATA[12]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[23]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[Table3]]></temporaryOriginalName>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[C5320A5A-85B5-472C-9005-63710BE5D6AA]]></uid>
@@ -1248,6 +1259,7 @@ feedback_partner_id: can be nil if taken anonymously.]]></comment>
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[25EE2B48-2CD0-4BC5-8052-DAEADB92958A]]></uid>
         </SQLField>
+        <labelWindowIndex><![CDATA[3]]></labelWindowIndex>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[D1839978-BAD8-4D37-A39C-B209B26B131F]]></uid>
     </SQLTable>
@@ -1266,7 +1278,7 @@ feedback_partner_id: can be nil if taken anonymously.]]></comment>
         <commentTitle><![CDATA[products table]]></commentTitle>
         <hidden><![CDATA[0]]></hidden>
         <labelColor><![CDATA[{0.997112,0.713501,0.670785,0.8}]]></labelColor>
-        <labelWindowIndex><![CDATA[0]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[2]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[clients cont. note]]></temporaryOriginalName>
         <uid><![CDATA[F484B987-F771-4E36-A156-66855D5D55A8]]></uid>
     </SQLComment>
@@ -1318,7 +1330,7 @@ feedback_partner_id: can be nil if taken anonymously.]]></comment>
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[B0FC499E-D5CC-4F87-979A-BD2C40A040D1]]></uid>
         </SQLField>
-        <labelWindowIndex><![CDATA[0]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[1]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[questions]]></temporaryOriginalName>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[FAC11301-231B-4195-AD9F-5FA3A19DA712]]></uid>
@@ -1458,17 +1470,17 @@ feedback_partner_id: can be nil if taken anonymously.]]></comment>
         <overviewPanelHidden><![CDATA[0]]></overviewPanelHidden>
         <pageBoundariesVisible><![CDATA[0]]></pageBoundariesVisible>
         <PageGridVisible><![CDATA[0]]></PageGridVisible>
-        <RightSidebarWidth><![CDATA[2230.000000]]></RightSidebarWidth>
+        <RightSidebarWidth><![CDATA[1000.000000]]></RightSidebarWidth>
         <sidebarIndex><![CDATA[0]]></sidebarIndex>
         <snapToGrid><![CDATA[0]]></snapToGrid>
         <SourceSidebarWidth><![CDATA[0.000000]]></SourceSidebarWidth>
         <SQLEditorFileFormatVersion><![CDATA[3.1]]></SQLEditorFileFormatVersion>
         <uid><![CDATA[71AA75CA-6EAB-4BCC-966D-8B90CF069194]]></uid>
-        <windowHeight><![CDATA[1246.000000]]></windowHeight>
-        <windowLocationX><![CDATA[191.000000]]></windowLocationX>
-        <windowLocationY><![CDATA[137.000000]]></windowLocationY>
-        <windowScrollOrigin><![CDATA[{30, 11}]]></windowScrollOrigin>
-        <windowWidth><![CDATA[2231.000000]]></windowWidth>
+        <windowHeight><![CDATA[946.000000]]></windowHeight>
+        <windowLocationX><![CDATA[84.000000]]></windowLocationX>
+        <windowLocationY><![CDATA[435.000000]]></windowLocationY>
+        <windowScrollOrigin><![CDATA[{373, 0}]]></windowScrollOrigin>
+        <windowWidth><![CDATA[1001.000000]]></windowWidth>
     </SQLDocumentInfo>
     <AllowsIndexRenamingOnInsert><![CDATA[1]]></AllowsIndexRenamingOnInsert>
     <containerName><![CDATA[model controller orginal container]]></containerName>
